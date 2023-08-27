@@ -1,8 +1,10 @@
 ## ********Oi, Grandad 2!********
 
+![Oi, Grandad! ](https://github.com/publicsamples/Oi-Grandad-2/blob/main/oigrandad2.png?raw=true)
+
 Oi, Grandad 2! is an updated version of the original "classic". New features include:
 
- **4 Voices in one **
+ **4 Voices in one**
 
 Each voice now has 4 playheads with control of the position, pitch and so on. Instead of adjusting each head individually, changes are made in groups with a (HOPEFULLY) musically pleasing algorithm controls their movement.
 
@@ -26,6 +28,5 @@ Oi, Grandad 2! is built with [HISE](http://hise.audio).
 
 [Oi, Grandad! v1](https://github.com/publicsamples/Oi-Grandad/) - [Download plugins](https://github.com/publicsamples/Oi-Grandad-2/releases) - [Guide](https://github.com/publicsamples/Oi-Grandad/wiki/Oi,-Grandad!-Quick-Guide) - [Demos](https://www.youtube.com/playlist?list=PL8Rp79UJ5uBC-SntUW93i3953yPq0DeSF)
 
-![Oi, Grandad! ](https://github.com/publicsamples/Oi-Grandad-2/blob/main/oigrandad2.png?raw=true)
 
 
