@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="graintest" Version="0.0.0" HasTail="0" AllowPolyphonic="1">
+  <Node FactoryPath="container.chain" ID="graintest" Bypassed="0" ShowParameters="1">
+    <Nodes>
+      <Node ID="clone_pack1" FactoryPath="control.clone_pack" Bypassed="0">
+        <ComplexData>
+          <SliderPacks>
+            <SliderPack Index="-1" EmbeddedData="12..........9C...3O"/>
+          </SliderPacks>
+        </ComplexData>
+        <Parameters>
+          <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                     Value="16.0"/>
+          <Parameter MinValue="0.0" MaxValue="16.0" StepSize="0.1" SkewFactor="1"
+                     ID="Value" Value="16.0"/>
+        </Parameters>
+      </Node>
+      <Node ID="clone_pack" FactoryPath="control.clone_pack" Bypassed="0">
+        <ComplexData>
+          <SliderPacks>
+            <SliderPack Index="-1" EmbeddedData="12....f+....9C...3O"/>
+          </SliderPacks>
+        </ComplexData>
+        <Parameters>
+          <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                     Value="16.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
+        </Parameters>
+      </Node>
+      <Node ID="intensity1" FactoryPath="control.intensity" Bypassed="0">
+        <ModulationTargets>
+          <Connection NodeId="midichain" ParameterId="pos"/>
+        </ModulationTargets>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" ID="Intensity" Value="1.0"/>
+        </Parameters>
+      </Node>
+      <Node ID="midichain" FactoryPath="container.midichain" Bypassed="0"
+            ShowParameters="1">
+        <Nodes>
+          <Node ID="ramp" FactoryPath="core.ramp" Bypassed="0">
+            <ModulationTargets>
+              <Connection NodeId="granulator1" ParameterId="Pitch"/>
+            </ModulationTargets>
+            <ComplexData>
+              <DisplayBuffers>
+                <DisplayBuffer Index="-1"/>
+              </DisplayBuffers>
+            </ComplexData>
+            <Parameters>
+              <Parameter MinValue="0.1000000014901161" MaxValue="1000.0" StepSize="0.1000000014901161"
+                         ID="PeriodTime" Value="352.7000052556396"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="LoopStart" Value="0.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Gate" Value="1.0"/>
+            </Parameters>
+          </Node>
+          <Node ID="granulator1" FactoryPath="core.granulator" Bypassed="0">
+            <ComplexData>
+              <AudioFiles>
+                <AudioFile Index="0" EmbeddedData="{PROJECT_FOLDER}vlid89-03.wav" MinValue="0"
+                           MaxValue="846720"/>
+              </AudioFiles>
+            </ComplexData>
+            <Parameters>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Position" StepSize="0.01" Automated="1"/>
+              <Parameter MinValue="0.5" MaxValue="2.0" SkewFactor="0.6309297680854797"
+                         ID="Pitch" Automated="1"/>
+              <Parameter MinValue="20.0" MaxValue="800.0" ID="GrainSize" Value="800.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Density" Value="0.543484375"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Spread" Value="0.73865625"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Detune" Value="0.0"/>
+            </Parameters>
+          </Node>
+        </Nodes>
+        <Parameters>
+          <Parameter ID="pos" MinValue="0.0" MaxValue="1.0" Automated="1">
+            <Connections>
+              <Connection NodeId="granulator1" ParameterId="Position"/>
+            </Connections>
+          </Parameter>
+        </Parameters>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="pos" MinValue="0.0" MaxValue="1.0" Value="0.22" StepSize="0.01">
+        <Connections/>
+      </Parameter>
+      <Parameter ID="moddepth" MinValue="0.0" MaxValue="1.0" Value="0.8048367614746094">
+        <Connections/>
+      </Parameter>
+      <Parameter ID="Parameter" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections/>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>

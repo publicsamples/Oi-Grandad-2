@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ProjectSettings>
+  <Name value="OG2"/>
+  <Version value="2.4.1"/>
+  <Description value=""/>
+  <BundleIdentifier value="com.modularsamples.product"/>
+  <PluginCode value="Msot"/>
+  <EmbedAudioFiles value="1"/>
+  <EmbedImageFiles value="1"/>
+  <SupportFullDynamicsHLAC value="No"/>
+  <AdditionalDspLibraries value=""/>
+  <OSXStaticLibs value=""/>
+  <WindowsStaticLibFolder value=""/>
+  <ExtraDefinitionsWindows value="HISE_NUM_PLUGIN_CHANNELS=10"/>
+  <ExtraDefinitionsOSX value="HISE_NUM_PLUGIN_CHANNELS=10"/>
+  <ExtraDefinitionsIOS value="HISE_NUM_PLUGIN_CHANNELS=10&#10;"/>
+  <ExtraDefinitionsLinux value="HISE_NUM_PLUGIN_CHANNELS=10&#10;"/>
+  <AppGroupID value=""/>
+  <RedirectSampleFolder value=""/>
+  <AAXCategoryFX value="AAX_ePlugInCategory_Modulation"/>
+  <SupportMonoFX value="No"/>
+  <EnableMidiInputFX value="No"/>
+  <EnableSoundGeneratorsFX value="No"/>
+  <VST3Support value="1"/>
+  <UseRawFrontend value="No"/>
+  <ExpansionType value="Disabled"/>
+  <EncryptionKey value=""/>
+  <LinkExpansionsToProject value="No"/>
+  <ReadOnlyFactoryPresets value="No"/>
+  <ForceStereoOutput value="No"/>
+  <EnableMidiOut value="No"/>
+  <AdminPermissions value="No"/>
+  <EmbedUserPresets value="Yes"/>
+  <EnableGlobalPreprocessor value="No"/>
+  <UseGlobalAppDataFolderWindows value="No"/>
+  <UseGlobalAppDataFolderMacOS value="No"/>
+  <VST3Category value=""/>
+  <OverwriteOldUserPresets value="No"/>
+  <DefaultUserPreset value=""/>
+</ProjectSettings>
