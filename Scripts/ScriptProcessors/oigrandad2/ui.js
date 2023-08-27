@@ -315,7 +315,7 @@ gsync4.setControlCallback(ongsync4Control);
 
 
 // Multichannel menus
-const var MultiChannelTest = Synth.getChildSynth("oi grandad");
+const var MultiChannelTest = Synth.getChildSynth("oigrandad2");
 
 
 var matrix = MultiChannelTest.getRoutingMatrix();
