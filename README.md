@@ -20,9 +20,7 @@ A dedicated mixer panel with a simple EQ, compressor, simple reverb and a multis
  
 Each of the four voices new has a wave guide resonator at the end of the signal chain. These can be used to create a variety of plucked and bowed string effects, short delays and other weirdness. The resonators pitch track to midi input over a limited range and can also be internally modulated. Other controls include a mix parameter, feedback and 1 pole low pass filter. Please note the resonator can significantly increase the gain of the voice with higher feedback settings, so watch your levels!
 
- **Loop player**
-
-While Grandad can do a kind of looping by modulating the position, this isn't always as accurate as we might like. To address this, I've added a loop player mode (accessed using the mode switch). When in loop mode, samples can be triggered by modulators, be timestretched and be passed through a handful of effects unique to the mode.
+ 
 
 Oi, Grandad 2! is built with [HISE](http://hise.audio).
 
