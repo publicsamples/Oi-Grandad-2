@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="multichorus" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="multichorus" Bypassed="0" ShowParameters="1">
+    <Nodes>
+      <Node ID="split9" FactoryPath="container.split" Bypassed="0">
+        <Nodes>
+          <Node ID="clone_pack" FactoryPath="control.clone_pack" Bypassed="0">
+            <ModulationTargets>
+              <Connection NodeId="chorus" ParameterId="depth"/>
+            </ModulationTargets>
+            <ComplexData>
+              <SliderPacks>
+                <SliderPack Index="0" EmbeddedData="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+              </SliderPacks>
+            </ComplexData>
+            <Parameters>
+              <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                         Value="1.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+            </Parameters>
+          </Node>
+          <Node ID="clone_pack1" FactoryPath="control.clone_pack" Bypassed="0">
+            <ModulationTargets>
+              <Connection NodeId="chorus" ParameterId="rate"/>
+            </ModulationTargets>
+            <ComplexData>
+              <SliderPacks>
+                <SliderPack Index="1" EmbeddedData="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+              </SliderPacks>
+            </ComplexData>
+            <Parameters>
+              <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                         Value="1.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+            </Parameters>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+      <Node ID="split10" FactoryPath="container.split" Bypassed="0">
+        <Nodes>
+          <Node ID="clone_cable" FactoryPath="control.clone_cable" Bypassed="0">
+            <Properties>
+              <Property ID="Mode" Value="Fixed"/>
+            </Properties>
+            <ModulationTargets>
+              <Connection NodeId="chorus" ParameterId="centre"/>
+            </ModulationTargets>
+            <Parameters>
+              <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                         Value="1.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Gamma" Value="0.0"/>
+            </Parameters>
+          </Node>
+          <Node ID="clone_cable3" FactoryPath="control.clone_cable" Bypassed="0">
+            <Properties>
+              <Property ID="Mode" Value="Fixed"/>
+            </Properties>
+            <ModulationTargets>
+              <Connection NodeId="chorus" ParameterId="feed"/>
+            </ModulationTargets>
+            <Parameters>
+              <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                         Value="1.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Gamma" Value="0.0"/>
+            </Parameters>
+          </Node>
+          <Node ID="clone_cable2" FactoryPath="control.clone_cable" Bypassed="0">
+            <Properties>
+              <Property ID="Mode" Value="Fixed"/>
+            </Properties>
+            <ModulationTargets>
+              <Connection NodeId="chorus" ParameterId="low"/>
+            </ModulationTargets>
+            <Parameters>
+              <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                         Value="1.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Gamma" Value="0.0"/>
+            </Parameters>
+          </Node>
+          <Node ID="clone_cable1" FactoryPath="control.clone_cable" Bypassed="0">
+            <Properties>
+              <Property ID="Mode" Value="Fixed"/>
+            </Properties>
+            <ModulationTargets>
+              <Connection NodeId="chorus" ParameterId="high"/>
+            </ModulationTargets>
+            <Parameters>
+              <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                         Value="1.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Gamma" Value="0.0"/>
+            </Parameters>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+      <Node ID="clone" FactoryPath="container.clone" Bypassed="0" ShowClones="0"
+            ShowParameters="1">
+        <Properties>
+          <Property ID="IsVertical" Value="0"/>
+        </Properties>
+        <Nodes>
+          <Node ID="clone_child" FactoryPath="container.chain" Bypassed="0" NodeColour="4287927444">
+            <Nodes>
+              <Node FactoryPath="container.chain" ID="chorus" Bypassed="0" ShowParameters="1">
+                <Nodes>
+                  <Node ID="split" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="chain" FactoryPath="container.chain" Bypassed="0">
+                        <Nodes>
+                          <Node ID="jchorus" FactoryPath="jdsp.jchorus" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="0.0" MaxValue="100.0" ID="CentreDelay" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Depth" Automated="1"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Feedback" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="100.0" SkewFactor="0.3010300099849701"
+                                         ID="Rate" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mix" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.004168691978254322"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf1" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.04725000000000179"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.009999999776482582"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="1.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="gain" FactoryPath="core.gain" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="Gain" Value="-24.09999886900188"/>
+                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                            </Parameters>
+                          </Node>
+                        </Nodes>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter ID="centre" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus" ParameterId="CentreDelay"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus" ParameterId="Depth"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus" ParameterId="Feedback"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="rate" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus" ParameterId="Rate"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="low" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="high" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf1" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child7" FactoryPath="container.chain" Bypassed="0"
+                NodeColour="4287927444">
+            <Nodes>
+              <Node FactoryPath="container.chain" ID="chorus7" Bypassed="0" ShowParameters="1">
+                <Nodes>
+                  <Node ID="split7" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="chain7" FactoryPath="container.chain" Bypassed="0">
+                        <Nodes>
+                          <Node ID="jchorus7" FactoryPath="jdsp.jchorus" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="0.0" MaxValue="100.0" ID="CentreDelay" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Depth" Automated="1"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Feedback" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="100.0" SkewFactor="0.3010300099849701"
+                                         ID="Rate" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mix" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf14" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.004168691978254322"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf15" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.04725000000000179"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.009999999776482582"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="1.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="gain7" FactoryPath="core.gain" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="Gain" Value="-24.09999886900188"/>
+                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                            </Parameters>
+                          </Node>
+                        </Nodes>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter ID="centre" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus7" ParameterId="CentreDelay"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus7" ParameterId="Depth"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus7" ParameterId="Feedback"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="rate" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus7" ParameterId="Rate"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="low" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf14" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="high" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf15" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child6" FactoryPath="container.chain" Bypassed="0"
+                NodeColour="4287927444">
+            <Nodes>
+              <Node FactoryPath="container.chain" ID="chorus6" Bypassed="0" ShowParameters="1">
+                <Nodes>
+                  <Node ID="split6" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="chain6" FactoryPath="container.chain" Bypassed="0">
+                        <Nodes>
+                          <Node ID="jchorus6" FactoryPath="jdsp.jchorus" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="0.0" MaxValue="100.0" ID="CentreDelay" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Depth" Automated="1"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Feedback" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="100.0" SkewFactor="0.3010300099849701"
+                                         ID="Rate" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mix" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf12" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.004168691978254322"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf13" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.04725000000000179"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.009999999776482582"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="1.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="gain6" FactoryPath="core.gain" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="Gain" Value="-24.09999886900188"/>
+                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                            </Parameters>
+                          </Node>
+                        </Nodes>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter ID="centre" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus6" ParameterId="CentreDelay"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus6" ParameterId="Depth"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus6" ParameterId="Feedback"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="rate" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus6" ParameterId="Rate"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="low" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf12" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="high" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf13" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child5" FactoryPath="container.chain" Bypassed="0"
+                NodeColour="4287927444">
+            <Nodes>
+              <Node FactoryPath="container.chain" ID="chorus5" Bypassed="0" ShowParameters="1">
+                <Nodes>
+                  <Node ID="split5" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="chain5" FactoryPath="container.chain" Bypassed="0">
+                        <Nodes>
+                          <Node ID="jchorus5" FactoryPath="jdsp.jchorus" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="0.0" MaxValue="100.0" ID="CentreDelay" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Depth" Automated="1"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Feedback" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="100.0" SkewFactor="0.3010300099849701"
+                                         ID="Rate" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mix" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf10" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.004168691978254322"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf11" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.04725000000000179"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.009999999776482582"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="1.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="gain5" FactoryPath="core.gain" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="Gain" Value="-24.09999886900188"/>
+                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                            </Parameters>
+                          </Node>
+                        </Nodes>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter ID="centre" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus5" ParameterId="CentreDelay"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus5" ParameterId="Depth"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus5" ParameterId="Feedback"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="rate" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus5" ParameterId="Rate"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="low" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf10" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="high" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf11" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child4" FactoryPath="container.chain" Bypassed="0"
+                NodeColour="4287927444">
+            <Nodes>
+              <Node FactoryPath="container.chain" ID="chorus4" Bypassed="0" ShowParameters="1">
+                <Nodes>
+                  <Node ID="split4" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="chain4" FactoryPath="container.chain" Bypassed="0">
+                        <Nodes>
+                          <Node ID="jchorus4" FactoryPath="jdsp.jchorus" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="0.0" MaxValue="100.0" ID="CentreDelay" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Depth" Automated="1"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Feedback" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="100.0" SkewFactor="0.3010300099849701"
+                                         ID="Rate" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mix" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf8" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.004168691978254322"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf9" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.04725000000000179"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.009999999776482582"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="1.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="gain4" FactoryPath="core.gain" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="Gain" Value="-24.09999886900188"/>
+                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                            </Parameters>
+                          </Node>
+                        </Nodes>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter ID="centre" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus4" ParameterId="CentreDelay"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus4" ParameterId="Depth"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus4" ParameterId="Feedback"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="rate" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus4" ParameterId="Rate"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="low" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf8" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="high" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf9" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child3" FactoryPath="container.chain" Bypassed="0"
+                NodeColour="4287927444">
+            <Nodes>
+              <Node FactoryPath="container.chain" ID="chorus3" Bypassed="0" ShowParameters="1">
+                <Nodes>
+                  <Node ID="split3" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="chain3" FactoryPath="container.chain" Bypassed="0">
+                        <Nodes>
+                          <Node ID="jchorus3" FactoryPath="jdsp.jchorus" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="0.0" MaxValue="100.0" ID="CentreDelay" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Depth" Automated="1"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Feedback" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="100.0" SkewFactor="0.3010300099849701"
+                                         ID="Rate" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mix" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf6" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.004168691978254322"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf7" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.04725000000000179"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.009999999776482582"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="1.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="gain3" FactoryPath="core.gain" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="Gain" Value="-24.09999886900188"/>
+                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                            </Parameters>
+                          </Node>
+                        </Nodes>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter ID="centre" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus3" ParameterId="CentreDelay"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus3" ParameterId="Depth"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus3" ParameterId="Feedback"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="rate" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus3" ParameterId="Rate"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="low" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf6" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="high" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf7" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child2" FactoryPath="container.chain" Bypassed="0"
+                NodeColour="4287927444">
+            <Nodes>
+              <Node FactoryPath="container.chain" ID="chorus2" Bypassed="0" ShowParameters="1">
+                <Nodes>
+                  <Node ID="split2" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="chain2" FactoryPath="container.chain" Bypassed="0">
+                        <Nodes>
+                          <Node ID="jchorus2" FactoryPath="jdsp.jchorus" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="0.0" MaxValue="100.0" ID="CentreDelay" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Depth" Automated="1"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Feedback" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="100.0" SkewFactor="0.3010300099849701"
+                                         ID="Rate" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mix" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf4" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.004168691978254322"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf5" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.04725000000000179"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.009999999776482582"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="1.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="gain2" FactoryPath="core.gain" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="Gain" Value="-24.09999886900188"/>
+                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                            </Parameters>
+                          </Node>
+                        </Nodes>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter ID="centre" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus2" ParameterId="CentreDelay"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus2" ParameterId="Depth"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus2" ParameterId="Feedback"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="rate" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus2" ParameterId="Rate"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="low" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf4" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="high" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf5" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child1" FactoryPath="container.chain" Bypassed="0"
+                NodeColour="4287927444">
+            <Nodes>
+              <Node FactoryPath="container.chain" ID="chorus1" Bypassed="0" ShowParameters="1">
+                <Nodes>
+                  <Node ID="split1" FactoryPath="container.split" Bypassed="0">
+                    <Nodes>
+                      <Node ID="chain1" FactoryPath="container.chain" Bypassed="0">
+                        <Nodes>
+                          <Node ID="jchorus1" FactoryPath="jdsp.jchorus" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="0.0" MaxValue="100.0" ID="CentreDelay" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Depth" Automated="1"/>
+                              <Parameter MinValue="-1.0" MaxValue="1.0" ID="Feedback" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="100.0" SkewFactor="0.3010300099849701"
+                                         ID="Rate" Automated="1"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mix" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf2" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.004168691978254322"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="0.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="svf3" FactoryPath="filters.svf" Bypassed="0">
+                            <ComplexData>
+                              <Filters>
+                                <Filter Index="-1" EmbeddedData=""/>
+                              </Filters>
+                            </ComplexData>
+                            <Parameters>
+                              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                         ID="Frequency" Automated="1"/>
+                              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                         ID="Q" Value="0.300000011920929"/>
+                              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.04725000000000179"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                         ID="Smoothing" Value="0.009999999776482582"/>
+                              <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Mode" Value="1.0"/>
+                              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                            </Parameters>
+                          </Node>
+                          <Node ID="gain1" FactoryPath="core.gain" Bypassed="0">
+                            <Parameters>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="Gain" Value="-24.09999886900188"/>
+                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                            </Parameters>
+                          </Node>
+                        </Nodes>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter ID="centre" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus1" ParameterId="CentreDelay"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus1" ParameterId="Depth"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus1" ParameterId="Feedback"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="rate" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="jchorus1" ParameterId="Rate"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="low" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf2" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                  <Parameter ID="high" MinValue="0.0" MaxValue="1.0" Automated="1">
+                    <Connections>
+                      <Connection NodeId="svf3" ParameterId="Frequency"/>
+                    </Connections>
+                  </Parameter>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+        </Nodes>
+        <Parameters>
+          <Parameter MinValue="1.0" MaxValue="8" StepSize="1.0" ID="NumClones" Value="8.0"/>
+          <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="SplitSignal"
+                     Value="2.0"/>
+        </Parameters>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="center offset" MinValue="0.0" MaxValue="1.0" Value="0.0">
+        <Connections>
+          <Connection NodeId="clone_cable" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="rate offset" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="clone_pack1" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="depth" MinValue="0.0" MaxValue="1.0" Value="0.29734375">
+        <Connections>
+          <Connection NodeId="clone_pack" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="feed" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="clone_cable3" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="lo" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="clone_cable2" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="hi" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="clone_cable1" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>

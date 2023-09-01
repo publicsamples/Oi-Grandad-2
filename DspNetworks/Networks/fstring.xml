@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="fstring" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="fstring" Bypassed="0">
+    <Nodes>
+      <Node ID="midichain" FactoryPath="container.midichain" Bypassed="0">
+        <Nodes>
+          <Node ID="midi" FactoryPath="control.midi" Bypassed="0">
+            <Properties>
+              <Property ID="ClassId" Value=""/>
+              <Property ID="Mode" Value="NoteNumber"/>
+            </Properties>
+            <ComplexData>
+              <Tables/>
+              <SliderPacks/>
+              <AudioFiles/>
+              <Filters/>
+              <DisplayBuffers/>
+            </ComplexData>
+            <Parameters/>
+          </Node>
+          <Node ID="faust" FactoryPath="core.faust" Bypassed="0">
+            <Properties>
+              <Property ID="ClassId" Value="fstring"/>
+              <Property ID="NumParameters" Value="0"/>
+            </Properties>
+            <Parameters>
+              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                         ID="gain" Value="0.6799999848008156"/>
+              <Parameter MinValue="0.1000000014901161" MaxValue="10.0" StepSize="0.009999999776482582"
+                         ID="length" Value="0.8399999849498272"/>
+              <Parameter MinValue="10.0" MaxValue="10000.0" StepSize="1.0" ID="lowpass"
+                         Value="10000.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="pluck1" Value="0.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="pluck2" Value="0.0"/>
+              <Parameter MinValue="0.0" MaxValue="0.004000000189989805" StepSize="0.00009999999747378752"
+                         ID="sust" Value="0.003999999898951501"/>
+            </Parameters>
+            <SwitchTargets/>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>

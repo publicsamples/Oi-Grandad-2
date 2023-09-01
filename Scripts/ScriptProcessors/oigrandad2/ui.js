@@ -2,7 +2,9 @@ Content.makeFrontInterface(895, 706);
 
 Engine.loadFontAs("{PROJECT_FOLDER}Montserrat-Medium.ttf", "Montserrat");
 
-  
+const var Hold = Content.getComponent("Hold");
+
+
   
  //
  const var gran = Synth.getEffect("gran");
@@ -452,6 +454,9 @@ Mod1SPs[4] = Content.getComponent("Mod1SP5");
 Mod1SPs[5] = Content.getComponent("Mod1SP6");
 Mod1SPs[6] = Content.getComponent("Mod1SP7");
 Mod1SPs[7] = Content.getComponent("Mod1SP8");
+
+
+
 
 
 
@@ -1160,30 +1165,81 @@ yop.setMouseCallback(function(event)
 });
 
 
-//xfade
+//Playback Menu
 
-const var XF = Content.getComponent("xfade");
+
 const var xfade = Synth.getModulator("xfade");
 const var xf1 = Synth.getEffect("xf1");
 const var xf2 = Synth.getEffect("xf2");
 const var xf3 = Synth.getEffect("xf3");
 const var xf4 = Synth.getEffect("xf4");
+const var Filter1 = Synth.getMidiProcessor("Filter1");
+const var Filter2 = Synth.getMidiProcessor("Filter2");
+const var Filter3 = Synth.getMidiProcessor("Filter3");
+const var Filter4 = Synth.getMidiProcessor("Filter4");
 const var XFcont = Content.getComponent("XFcont");
+const var LedPanel = Content.getComponent("LedPanel");
 
 
-inline function onxfadeControl(component, value)
+const var Playback = Content.getComponent("Playback");
+
+
+
+inline function onPlaybackControl(component, value)
 {
-	XFcont.showControl(1-value); 
-	XFcont.showControl(value);
 
-	xf1.setBypassed(1 -value);
-	xf2.setBypassed(1 -value);
-	xf3.setBypassed(1 -value);
-	xf4.setBypassed(1 -value);
-	xfade.setBypassed(1 -value);
+	if(value == 1)
+	{
+	XFcont.showControl(0); 
+	LedPanel.showControl(0); 
+	xf1.setBypassed(1);
+	xf2.setBypassed(1);
+	xf3.setBypassed(1);
+	xf4.setBypassed(1);
+	xfade.setBypassed(1);
+	Filter1.setBypassed(1);
+	Filter2.setBypassed(1);
+	Filter3.setBypassed(1);
+	Filter4.setBypassed(1);
+	}
+	
+		if(value == 2)
+	{
+	XFcont.showControl(0); 
+	LedPanel.showControl(1); 
+	xf1.setBypassed(1);
+	xf2.setBypassed(1);
+	xf3.setBypassed(1);
+	xf4.setBypassed(1);
+	xfade.setBypassed(1);
+	Filter1.setBypassed(0);
+	Filter2.setBypassed(0);
+	Filter3.setBypassed(0);
+	Filter4.setBypassed(0);
+	}
+	
+	
+		if(value == 3)
+	{
+	XFcont.showControl(1); 
+	LedPanel.showControl(0); 
+	xf1.setBypassed(0);
+	xf2.setBypassed(0);
+	xf3.setBypassed(0);
+	xf4.setBypassed(0);
+	xfade.setBypassed(0);
+	Filter1.setBypassed(1);
+	Filter2.setBypassed(1);
+	Filter3.setBypassed(1);
+	Filter4.setBypassed(1);
+
+	}
+
+	
+	
 };
 
-Content.getComponent("xfade").setControlCallback(onxfadeControl);
+Content.getComponent("Playback").setControlCallback(onPlaybackControl);
 
 
 const var pages = [];
@@ -1202,6 +1258,30 @@ for (i = 0; i < pages.length; i++)
 
 Content.getComponent("PAGES").setControlCallback(onPAGESControl);
 
+//Play button
+
+const var Note = Content.getComponent("Note");
+
+
+inline function onHoldControl(component, value)
+{   
+local sound = Note.getValue()-1;
+	if (value)
+	{
+	    Synth.playNote(24+sound-1, 64);
+	}
+	else
+	{
+	    Engine.allNotesOff();
+	}
+		
+	};
+
+Content.getComponent("Hold").setControlCallback(onHoldControl);
+
+
+
+
 function onNoteOn()
 {
 	// the index is zero based like everything else in good
@@ -1209,10 +1289,15 @@ function onNoteOn()
 	// channel number
 	local d = rrIndex+1;
 	
+	
 	// Store the value in the MIDIList for the note on
 	EventIdStack.push(noteOnChannels, Message.getEventId(), d);
 	Console.print(d);
+for (i = 0; i < RrLed.length; i++)
+	        RrLed[i].setValue(d - 1 == i);
 	Message.setChannel(d);
+	
+	
 	
 	// Cycle through the round robin amount
 	if(rrIndex++ >= 4)
@@ -1223,6 +1308,7 @@ function onNoteOff()
 {
     local c = EventIdStack.pop(noteOnChannels, Message.getEventId());
 	Message.setChannel(c);
+
     
 }
  function onController()

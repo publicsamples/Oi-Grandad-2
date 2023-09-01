@@ -4,7 +4,7 @@
 // - ON: the sine generators will be cycled
 // - OFF: all will be played each time
 
-const var Enable = Content.getComponent("Enable");
+
 
 // Grab a reference to the MIDI filters
 const var filters = [Synth.getMidiProcessor("Filter1"),
@@ -12,14 +12,17 @@ const var filters = [Synth.getMidiProcessor("Filter1"),
                      Synth.getMidiProcessor("Filter3"),
                      Synth.getMidiProcessor("Filter4")];
 
-inline function bCallback(control, value)
-{
-    // Bypass all filters if its off
-    for(f in filters)
-        f.setBypassed(!value);
-}
+const var RrLed = [Content.getComponent("RrLed1"),
+                   Content.getComponent("RrLed2"),
+                   Content.getComponent("RrLed3"),
+                   Content.getComponent("RrLed4"),
+                   Content.getComponent("RrLed5")];
 
-Enable.setControlCallback(bCallback);
+const var RrLed1 = Content.getComponent("RrLed1");
+
+
+
+
 
 /** This is a data structure that can be used for
     storing any kind of information with the event
