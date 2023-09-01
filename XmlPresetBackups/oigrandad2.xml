@@ -754,10 +754,10 @@
             <Control type="ScriptButton" id="mute9" value="0.0"/>
             <Control type="ScriptSlider" id="pos169" value="-100.0"/>
             <Control type="ScriptSlider" id="pos170" value="-100.0"/>
-            <Control type="ScriptButton" id="RrLed2" value="0"/>
+            <Control type="ScriptButton" id="RrLed2" value="1"/>
             <Control type="ScriptButton" id="RrLed3" value="0"/>
             <Control type="ScriptButton" id="RrLed4" value="0"/>
-            <Control type="ScriptButton" id="RrLed5" value="1"/>
+            <Control type="ScriptButton" id="RrLed5" value="0"/>
             <Control type="ScriptButton" id="RrLed1" value="0"/>
             <Control type="ScriptComboBox" id="Playback" value="1.0"/>
             <Control type="ScriptComboBox" id="ComboBox1" value="1.0"/>
@@ -1201,7 +1201,7 @@
                 <ContentProperties DeviceType="Desktop"/>
               </UIData>
             </Processor>
-            <Processor Type="SimpleGain" ID="Simple Gain2" Bypassed="0" Gain="4.699997425079346"
+            <Processor Type="SimpleGain" ID="Simple Gain2" Bypassed="0" Gain="4.8399977684021"
                        Delay="0.0" Width="100.0" Balance="0.0" InvertPolarity="0.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1.0">

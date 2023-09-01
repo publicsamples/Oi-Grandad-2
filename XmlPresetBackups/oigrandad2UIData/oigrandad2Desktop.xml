@@ -5241,7 +5241,7 @@
                  dragDirection="Vertical" showValuePopup="Below" isPluginParameter="1"
                  pluginParameterName="position1" defaultValue="0.5"/>
       <Component type="ScriptSlider" id="sustain5" x="34.0" y="2.0" width="50.0"
-                 height="130.0" parentComponent="trk2" processorId="Simple Gain2"
+                 height="130.0" parentComponent="trk2" processorId="Simple Gain3"
                  middlePosition="0.0" filmstripImage="{PROJECT_FOLDER}SL11.png"
                  numStrips="200.0" textColour="16777215" itemColour="4294949120"
                  dragDirection="Vertical" showValuePopup="Below" scaleFactor="1.200000047683716"
@@ -5408,7 +5408,7 @@
                  dragDirection="Vertical" showValuePopup="Below" isPluginParameter="1"
                  pluginParameterName="position1" defaultValue="0.5"/>
       <Component type="ScriptSlider" id="sustain6" x="34.0" y="2.0" width="50.0"
-                 height="130.0" parentComponent="trk3" processorId="Simple Gain2"
+                 height="130.0" parentComponent="trk3" processorId="Simple Gain4"
                  middlePosition="0.0" filmstripImage="{PROJECT_FOLDER}SL11.png"
                  numStrips="200.0" textColour="16777215" itemColour="4294949120"
                  dragDirection="Vertical" showValuePopup="Below" scaleFactor="1.200000047683716"
@@ -5575,7 +5575,7 @@
                  dragDirection="Vertical" showValuePopup="Below" isPluginParameter="1"
                  pluginParameterName="position1" defaultValue="0.5"/>
       <Component type="ScriptSlider" id="sustain7" x="34.0" y="2.0" width="50.0"
-                 height="130.0" parentComponent="trk4" processorId="Simple Gain2"
+                 height="130.0" parentComponent="trk4" processorId="Simple Gain5"
                  middlePosition="0.0" filmstripImage="{PROJECT_FOLDER}SL11.png"
                  numStrips="200.0" textColour="16777215" itemColour="4294949120"
                  dragDirection="Vertical" showValuePopup="Below" scaleFactor="1.200000047683716"
