@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="DspNetwork" Version="0.0.0">
+<Network ID="DspNetwork" Version="0.0.0" SuspendOnSilence="1">
   <Node FactoryPath="container.chain" ID="DspNetwork" Bypassed="0" ShowParameters="1">
     <Nodes>
       <Node ID="midichain" FactoryPath="container.midichain" Bypassed="0">
@@ -294,18 +294,10 @@
                   <Connection NodeId="cable_table17" ParameterId="Value"/>
                   <Connection NodeId="cable_table16" ParameterId="Value"/>
                   <Connection NodeId="cable_table15" ParameterId="Value"/>
-                  <Connection NodeId="cable_table14" ParameterId="Value"/>
-                  <Connection NodeId="cable_table13" ParameterId="Value"/>
-                  <Connection NodeId="cable_table12" ParameterId="Value"/>
-                  <Connection NodeId="cable_table11" ParameterId="Value"/>
                   <Connection NodeId="cable_pack" ParameterId="Value"/>
                   <Connection NodeId="cable_pack7" ParameterId="Value"/>
                   <Connection NodeId="cable_pack6" ParameterId="Value"/>
                   <Connection NodeId="cable_pack5" ParameterId="Value"/>
-                  <Connection NodeId="cable_pack4" ParameterId="Value"/>
-                  <Connection NodeId="cable_pack3" ParameterId="Value"/>
-                  <Connection NodeId="cable_pack2" ParameterId="Value"/>
-                  <Connection NodeId="cable_pack1" ParameterId="Value"/>
                 </ModulationTargets>
                 <Parameters>
                   <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
@@ -329,7 +321,7 @@
             <Nodes>
               <Node ID="xfader" FactoryPath="control.xfader" Bypassed="0">
                 <Properties>
-                  <Property ID="NumParameters" Value="8"/>
+                  <Property ID="NumParameters" Value="4"/>
                   <Property ID="Mode" Value="Linear"/>
                 </Properties>
                 <SwitchTargets>
@@ -351,26 +343,6 @@
                   <SwitchTarget>
                     <Connections>
                       <Connection NodeId="gain12" ParameterId="Gain"/>
-                    </Connections>
-                  </SwitchTarget>
-                  <SwitchTarget>
-                    <Connections>
-                      <Connection NodeId="gain11" ParameterId="Gain"/>
-                    </Connections>
-                  </SwitchTarget>
-                  <SwitchTarget>
-                    <Connections>
-                      <Connection NodeId="gain10" ParameterId="Gain"/>
-                    </Connections>
-                  </SwitchTarget>
-                  <SwitchTarget>
-                    <Connections>
-                      <Connection NodeId="gain9" ParameterId="Gain"/>
-                    </Connections>
-                  </SwitchTarget>
-                  <SwitchTarget>
-                    <Connections>
-                      <Connection NodeId="gain8" ParameterId="Gain"/>
                     </Connections>
                   </SwitchTarget>
                 </SwitchTargets>
@@ -512,138 +484,6 @@
                     </Nodes>
                     <Parameters/>
                   </Node>
-                  <Node ID="chain14" FactoryPath="container.chain" Bypassed="0">
-                    <Nodes>
-                      <Node ID="cable_table14" FactoryPath="control.cable_table" Bypassed="0">
-                        <ModulationTargets>
-                          <Connection NodeId="add12" ParameterId="Value"/>
-                        </ModulationTargets>
-                        <ComplexData>
-                          <Tables>
-                            <Table Index="4" EmbeddedData="72...............vO...X9PdFO4C...vO..fk9.5G82C...vO..vu9rRVI8C...vO..HI+PvE33C...vO...f+....9C...vO"/>
-                          </Tables>
-                        </ComplexData>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="add12" FactoryPath="math.add" Bypassed="0">
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="gain11" FactoryPath="core.gain" Bypassed="0">
-                        <Parameters>
-                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                        </Parameters>
-                      </Node>
-                    </Nodes>
-                    <Parameters/>
-                  </Node>
-                  <Node ID="chain13" FactoryPath="container.chain" Bypassed="0">
-                    <Nodes>
-                      <Node ID="cable_table13" FactoryPath="control.cable_table" Bypassed="0">
-                        <ModulationTargets>
-                          <Connection NodeId="add11" ParameterId="Value"/>
-                        </ModulationTargets>
-                        <ComplexData>
-                          <Tables>
-                            <Table Index="5" EmbeddedData="72...............vO...X9PdFO4C...vO..fk9.5G82C...vO..vu9rRVI8C...vO..HI+PvE33C...vO...f+....9C...vO"/>
-                          </Tables>
-                        </ComplexData>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="add11" FactoryPath="math.add" Bypassed="0">
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="gain10" FactoryPath="core.gain" Bypassed="0">
-                        <Parameters>
-                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                        </Parameters>
-                      </Node>
-                    </Nodes>
-                    <Parameters/>
-                  </Node>
-                  <Node ID="chain12" FactoryPath="container.chain" Bypassed="0">
-                    <Nodes>
-                      <Node ID="cable_table12" FactoryPath="control.cable_table" Bypassed="0">
-                        <ModulationTargets>
-                          <Connection NodeId="add10" ParameterId="Value"/>
-                        </ModulationTargets>
-                        <ComplexData>
-                          <Tables>
-                            <Table Index="6" EmbeddedData="72...............vO...X9PdFO4C...vO..fk9.5G82C...vO..vu9rRVI8C...vO..HI+PvE33C...vO...f+....9C...vO"/>
-                          </Tables>
-                        </ComplexData>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="add10" FactoryPath="math.add" Bypassed="0">
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="gain9" FactoryPath="core.gain" Bypassed="0">
-                        <Parameters>
-                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                        </Parameters>
-                      </Node>
-                    </Nodes>
-                    <Parameters/>
-                  </Node>
-                  <Node ID="chain11" FactoryPath="container.chain" Bypassed="0">
-                    <Nodes>
-                      <Node ID="cable_table11" FactoryPath="control.cable_table" Bypassed="0">
-                        <ModulationTargets>
-                          <Connection NodeId="add9" ParameterId="Value"/>
-                        </ModulationTargets>
-                        <ComplexData>
-                          <Tables>
-                            <Table Index="7" EmbeddedData="72...............vO...X9PdFO4C...vO..fk9.5G82C...vO..vu9rRVI8C...vO..HI+PvE33C...vO...f+....9C...vO"/>
-                          </Tables>
-                        </ComplexData>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="add9" FactoryPath="math.add" Bypassed="0">
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="gain8" FactoryPath="core.gain" Bypassed="0">
-                        <Parameters>
-                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                     SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                        </Parameters>
-                      </Node>
-                    </Nodes>
-                    <Parameters/>
-                  </Node>
                 </Nodes>
                 <Parameters/>
               </Node>
@@ -667,7 +507,7 @@
                 <Nodes>
                   <Node ID="xfader1" FactoryPath="control.xfader" Bypassed="0">
                     <Properties>
-                      <Property ID="NumParameters" Value="8"/>
+                      <Property ID="NumParameters" Value="4"/>
                       <Property ID="Mode" Value="Linear"/>
                     </Properties>
                     <SwitchTargets>
@@ -689,26 +529,6 @@
                       <SwitchTarget>
                         <Connections>
                           <Connection NodeId="gain20" ParameterId="Gain"/>
-                        </Connections>
-                      </SwitchTarget>
-                      <SwitchTarget>
-                        <Connections>
-                          <Connection NodeId="gain19" ParameterId="Gain"/>
-                        </Connections>
-                      </SwitchTarget>
-                      <SwitchTarget>
-                        <Connections>
-                          <Connection NodeId="gain18" ParameterId="Gain"/>
-                        </Connections>
-                      </SwitchTarget>
-                      <SwitchTarget>
-                        <Connections>
-                          <Connection NodeId="gain17" ParameterId="Gain"/>
-                        </Connections>
-                      </SwitchTarget>
-                      <SwitchTarget>
-                        <Connections>
-                          <Connection NodeId="gain16" ParameterId="Gain"/>
                         </Connections>
                       </SwitchTarget>
                     </SwitchTargets>
@@ -850,138 +670,6 @@
                         </Nodes>
                         <Parameters/>
                       </Node>
-                      <Node ID="chain23" FactoryPath="container.chain" Bypassed="0">
-                        <Nodes>
-                          <Node ID="cable_pack4" FactoryPath="control.cable_pack" Bypassed="0">
-                            <ModulationTargets>
-                              <Connection NodeId="add20" ParameterId="Value"/>
-                            </ModulationTargets>
-                            <ComplexData>
-                              <SliderPacks>
-                                <SliderPack Index="4"/>
-                              </SliderPacks>
-                            </ComplexData>
-                            <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                            </Parameters>
-                          </Node>
-                          <Node ID="add20" FactoryPath="math.add" Bypassed="0">
-                            <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                            </Parameters>
-                          </Node>
-                          <Node ID="gain19" FactoryPath="core.gain" Bypassed="0">
-                            <Parameters>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                            </Parameters>
-                          </Node>
-                        </Nodes>
-                        <Parameters/>
-                      </Node>
-                      <Node ID="chain22" FactoryPath="container.chain" Bypassed="0">
-                        <Nodes>
-                          <Node ID="cable_pack3" FactoryPath="control.cable_pack" Bypassed="0">
-                            <ModulationTargets>
-                              <Connection NodeId="add19" ParameterId="Value"/>
-                            </ModulationTargets>
-                            <ComplexData>
-                              <SliderPacks>
-                                <SliderPack Index="5"/>
-                              </SliderPacks>
-                            </ComplexData>
-                            <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                            </Parameters>
-                          </Node>
-                          <Node ID="add19" FactoryPath="math.add" Bypassed="0">
-                            <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                            </Parameters>
-                          </Node>
-                          <Node ID="gain18" FactoryPath="core.gain" Bypassed="0">
-                            <Parameters>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                            </Parameters>
-                          </Node>
-                        </Nodes>
-                        <Parameters/>
-                      </Node>
-                      <Node ID="chain21" FactoryPath="container.chain" Bypassed="0">
-                        <Nodes>
-                          <Node ID="cable_pack2" FactoryPath="control.cable_pack" Bypassed="0">
-                            <ModulationTargets>
-                              <Connection NodeId="add18" ParameterId="Value"/>
-                            </ModulationTargets>
-                            <ComplexData>
-                              <SliderPacks>
-                                <SliderPack Index="6"/>
-                              </SliderPacks>
-                            </ComplexData>
-                            <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                            </Parameters>
-                          </Node>
-                          <Node ID="add18" FactoryPath="math.add" Bypassed="0">
-                            <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                            </Parameters>
-                          </Node>
-                          <Node ID="gain17" FactoryPath="core.gain" Bypassed="0">
-                            <Parameters>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                            </Parameters>
-                          </Node>
-                        </Nodes>
-                        <Parameters/>
-                      </Node>
-                      <Node ID="chain20" FactoryPath="container.chain" Bypassed="0">
-                        <Nodes>
-                          <Node ID="cable_pack1" FactoryPath="control.cable_pack" Bypassed="0">
-                            <ModulationTargets>
-                              <Connection NodeId="add17" ParameterId="Value"/>
-                            </ModulationTargets>
-                            <ComplexData>
-                              <SliderPacks>
-                                <SliderPack Index="7"/>
-                              </SliderPacks>
-                            </ComplexData>
-                            <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                            </Parameters>
-                          </Node>
-                          <Node ID="add17" FactoryPath="math.add" Bypassed="0">
-                            <Parameters>
-                              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                            </Parameters>
-                          </Node>
-                          <Node ID="gain16" FactoryPath="core.gain" Bypassed="0">
-                            <Parameters>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
-                              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
-                                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
-                              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
-                            </Parameters>
-                          </Node>
-                        </Nodes>
-                        <Parameters/>
-                      </Node>
                     </Nodes>
                     <Parameters/>
                   </Node>
@@ -1076,7 +764,7 @@
           <Connection NodeId="ramp" ParameterId="LoopStart"/>
         </Connections>
       </Parameter>
-      <Parameter ID="morph" MinValue="1.0" MaxValue="8.0" Value="1.0">
+      <Parameter ID="morph" MinValue="1.0" MaxValue="4.0" Value="1.0">
         <Connections>
           <Connection NodeId="pma" ParameterId="Add"/>
         </Connections>

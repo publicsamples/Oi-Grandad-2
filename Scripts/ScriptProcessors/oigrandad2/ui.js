@@ -12,13 +12,10 @@ const var Hold = Content.getComponent("Hold");
  const var gran3 = Synth.getEffect("gran3");
  const var gran4 = Synth.getEffect("gran4");
  
-const var loop1 = Content.getComponent("loop1");
+
 const var granular1 = Content.getComponent("granular1");
-const var loop2 = Content.getComponent("loop2");
 const var granular2 = Content.getComponent("granular2");
-const var loop3 = Content.getComponent("loop3");
 const var granular3 = Content.getComponent("granular3");
-const var loop4 = Content.getComponent("loop4");
 const var granular4 = Content.getComponent("granular4");
 
 
@@ -42,14 +39,8 @@ const var psync4 = Content.getComponent("psync4");
 const var pitch1modsel3 = Content.getComponent("pitch1modsel3");
 const var pitchmod4 = Content.getComponent("pitchmod4");
 const var pitchdiv4 = Content.getComponent("pitchdiv4");
-const var pitchdivA = Content.getComponent("pitchdivA");
-const var pitchdivA1 = Content.getComponent("pitchdivA1");
-const var pitchdivA2 = Content.getComponent("pitchdivA2");
-const var pitchdivA3 = Content.getComponent("pitchdivA3");
-const var psyncST1 = Content.getComponent("psyncST1");
-const var psyncST2 = Content.getComponent("psyncST2");
-const var psyncST3 = Content.getComponent("psyncST3");
-const var psyncST4 = Content.getComponent("psyncST4");
+
+
 
 
 
@@ -112,48 +103,6 @@ inline function onpsync4Control(component, value)
 };
 
 Content.getComponent("psync4").setControlCallback(onpsync4Control);
-
-
-inline function onpsyncST1Control(component, value)
-{
- 		pitchdivA.showControl(value); 
-        pitchdivA.showControl(1-value);
-        grs1.setAttribute(grs1.psync, 0);
-        grs1.setAttribute(grs1.psync, 1-value);
-};
-
-Content.getComponent("psyncST1").setControlCallback(onpsyncST1Control);
-
-inline function onpsyncST2Control(component, value)
-{
- 		pitchdivA1.showControl(value); 
-        pitchdivA1.showControl(1-value);
-        grs2.setAttribute(grs2.psync, 0);
-        grs2.setAttribute(grs2.psync, 1-value);
-};
-
-Content.getComponent("psyncST2").setControlCallback(onpsyncST2Control);
-
-inline function onpsyncST3Control(component, value)
-{
- 		pitchdivA2.showControl(value); 
-        pitchdivA2.showControl(1-value);
-        grs3.setAttribute(grs3.psync, 0);
-        grs3.setAttribute(grs3.psync, 1-value);
-};
-
-Content.getComponent("psyncST3").setControlCallback(onpsyncST3Control);
-
-inline function onpsyncST4Control(component, value)
-{
- 		pitchdivA3.showControl(value); 
-        pitchdivA3.showControl(1-value);
-        grs4.setAttribute(grs4.psync, 0);
-        grs4.setAttribute(grs4.psync, 1-value);
-};
-
-Content.getComponent("psyncST4").setControlCallback(onpsyncST4Control);
-
 
 
 // Switch grain slider
@@ -439,10 +388,7 @@ mod1tables[0] = Content.getComponent("MOD1Table1");
 mod1tables[1] = Content.getComponent("MOD1Table2");
 mod1tables[2] = Content.getComponent("MOD1Table3");
 mod1tables[3] = Content.getComponent("MOD1Table4");
-mod1tables[4] = Content.getComponent("MOD1Table5");
-mod1tables[5] = Content.getComponent("MOD1Table6");
-mod1tables[6] = Content.getComponent("MOD1Table7");
-mod1tables[7] = Content.getComponent("MOD1Table8");
+
 
 const var Mod1SPs = []
 
@@ -450,10 +396,6 @@ Mod1SPs[0] = Content.getComponent("Mod1SP1");
 Mod1SPs[1] = Content.getComponent("Mod1SP2");
 Mod1SPs[2] = Content.getComponent("Mod1SP3");
 Mod1SPs[3] = Content.getComponent("Mod1SP4");
-Mod1SPs[4] = Content.getComponent("Mod1SP5");
-Mod1SPs[5] = Content.getComponent("Mod1SP6");
-Mod1SPs[6] = Content.getComponent("Mod1SP7");
-Mod1SPs[7] = Content.getComponent("Mod1SP8");
 
 
 
@@ -483,10 +425,6 @@ mod2tables[0] = Content.getComponent("MOD1Table9");
 mod2tables[1] = Content.getComponent("MOD1Table10");
 mod2tables[2] = Content.getComponent("MOD1Table11");
 mod2tables[3] = Content.getComponent("MOD1Table12");
-mod2tables[4] = Content.getComponent("MOD1Table13");
-mod2tables[5] = Content.getComponent("MOD1Table14");
-mod2tables[6] = Content.getComponent("MOD1Table15");
-mod2tables[7] = Content.getComponent("MOD1Table16");
 
 const var Mod2SPs = []
 
@@ -494,12 +432,6 @@ Mod2SPs[0] = Content.getComponent("Mod1SP9");
 Mod2SPs[1] = Content.getComponent("Mod1SP10");
 Mod2SPs[2] = Content.getComponent("Mod1SP11");
 Mod2SPs[3] = Content.getComponent("Mod1SP12");
-Mod2SPs[4] = Content.getComponent("Mod1SP13");
-Mod2SPs[5] = Content.getComponent("Mod1SP14");
-Mod2SPs[6] = Content.getComponent("Mod1SP15");
-Mod2SPs[7] = Content.getComponent("Mod1SP16");
-
-
 
 const var modpreset1 = Content.getComponent("modpreset1");
 
@@ -525,10 +457,6 @@ mod3tables[0] = Content.getComponent("MOD1Table17");
 mod3tables[1] = Content.getComponent("MOD1Table18");
 mod3tables[2] = Content.getComponent("MOD1Table19");
 mod3tables[3] = Content.getComponent("MOD1Table20");
-mod3tables[4] = Content.getComponent("MOD1Table21");
-mod3tables[5] = Content.getComponent("MOD1Table22");
-mod3tables[6] = Content.getComponent("MOD1Table23");
-mod3tables[7] = Content.getComponent("MOD1Table24");
 
 const var Mod3SPs = []
 
@@ -536,10 +464,6 @@ Mod3SPs[0] = Content.getComponent("Mod1SP17");
 Mod3SPs[1] = Content.getComponent("Mod1SP18");
 Mod3SPs[2] = Content.getComponent("Mod1SP19");
 Mod3SPs[3] = Content.getComponent("Mod1SP20");
-Mod3SPs[4] = Content.getComponent("Mod1SP21");
-Mod3SPs[5] = Content.getComponent("Mod1SP22");
-Mod3SPs[6] = Content.getComponent("Mod1SP23");
-Mod3SPs[7] = Content.getComponent("Mod1SP24");
 
 
 
@@ -566,10 +490,7 @@ mod4tables[0] = Content.getComponent("MOD1Table25");
 mod4tables[1] = Content.getComponent("MOD1Table26");
 mod4tables[2] = Content.getComponent("MOD1Table27");
 mod4tables[3] = Content.getComponent("MOD1Table28");
-mod4tables[4] = Content.getComponent("MOD1Table29");
-mod4tables[5] = Content.getComponent("MOD1Table30");
-mod4tables[6] = Content.getComponent("MOD1Table31");
-mod4tables[7] = Content.getComponent("MOD1Table32");
+
 
 const var Mod4SPs = []
 
@@ -577,10 +498,7 @@ Mod4SPs[0] = Content.getComponent("Mod1SP25");
 Mod4SPs[1] = Content.getComponent("Mod1SP26");
 Mod4SPs[2] = Content.getComponent("Mod1SP27");
 Mod4SPs[3] = Content.getComponent("Mod1SP28");
-Mod4SPs[4] = Content.getComponent("Mod1SP29");
-Mod4SPs[5] = Content.getComponent("Mod1SP30");
-Mod4SPs[6] = Content.getComponent("Mod1SP31");
-Mod4SPs[7] = Content.getComponent("Mod1SP32");
+
 
 
 
@@ -607,10 +525,7 @@ mod5tables[0] = Content.getComponent("MOD1Table33");
 mod5tables[1] = Content.getComponent("MOD1Table34");
 mod5tables[2] = Content.getComponent("MOD1Table35");
 mod5tables[3] = Content.getComponent("MOD1Table36");
-mod5tables[4] = Content.getComponent("MOD1Table37");
-mod5tables[5] = Content.getComponent("MOD1Table38");
-mod5tables[6] = Content.getComponent("MOD1Table39");
-mod5tables[7] = Content.getComponent("MOD1Table40");
+
 
 const var Mod5SPs = []
 
@@ -618,10 +533,7 @@ Mod5SPs[0] = Content.getComponent("Mod1SP33");
 Mod5SPs[1] = Content.getComponent("Mod1SP34");
 Mod5SPs[2] = Content.getComponent("Mod1SP35");
 Mod5SPs[3] = Content.getComponent("Mod1SP36");
-Mod5SPs[4] = Content.getComponent("Mod1SP37");
-Mod5SPs[5] = Content.getComponent("Mod1SP38");
-Mod5SPs[6] = Content.getComponent("Mod1SP39");
-Mod5SPs[7] = Content.getComponent("Mod1SP40");
+
 
 
 
@@ -648,10 +560,7 @@ mod6tables[0] = Content.getComponent("MOD1Table41");
 mod6tables[1] = Content.getComponent("MOD1Table42");
 mod6tables[2] = Content.getComponent("MOD1Table43");
 mod6tables[3] = Content.getComponent("MOD1Table44");
-mod6tables[4] = Content.getComponent("MOD1Table45");
-mod6tables[5] = Content.getComponent("MOD1Table46");
-mod6tables[6] = Content.getComponent("MOD1Table47");
-mod6tables[7] = Content.getComponent("MOD1Table48");
+
 
 const var Mod6SPs = []
 
@@ -659,10 +568,7 @@ Mod6SPs[0] = Content.getComponent("Mod1SP41");
 Mod6SPs[1] = Content.getComponent("Mod1SP42");
 Mod6SPs[2] = Content.getComponent("Mod1SP43");
 Mod6SPs[3] = Content.getComponent("Mod1SP44");
-Mod6SPs[4] = Content.getComponent("Mod1SP45");
-Mod6SPs[5] = Content.getComponent("Mod1SP46");
-Mod6SPs[6] = Content.getComponent("Mod1SP47");
-Mod6SPs[7] = Content.getComponent("Mod1SP48");
+
 
 
 
@@ -689,10 +595,6 @@ mod7tables[0] = Content.getComponent("MOD1Table49");
 mod7tables[1] = Content.getComponent("MOD1Table50");
 mod7tables[2] = Content.getComponent("MOD1Table51");
 mod7tables[3] = Content.getComponent("MOD1Table52");
-mod7tables[4] = Content.getComponent("MOD1Table53");
-mod7tables[5] = Content.getComponent("MOD1Table54");
-mod7tables[6] = Content.getComponent("MOD1Table55");
-mod7tables[7] = Content.getComponent("MOD1Table56");
 
 const var Mod7SPs = []
 
@@ -700,10 +602,7 @@ Mod7SPs[0] = Content.getComponent("Mod1SP49");
 Mod7SPs[1] = Content.getComponent("Mod1SP50");
 Mod7SPs[2] = Content.getComponent("Mod1SP51");
 Mod7SPs[3] = Content.getComponent("Mod1SP52");
-Mod7SPs[4] = Content.getComponent("Mod1SP53");
-Mod7SPs[5] = Content.getComponent("Mod1SP54");
-Mod7SPs[6] = Content.getComponent("Mod1SP55");
-Mod7SPs[7] = Content.getComponent("Mod1SP56");
+
 
 
 
@@ -730,10 +629,7 @@ Mod8tables[0] = Content.getComponent("MOD1Table57");
 Mod8tables[1] = Content.getComponent("MOD1Table58");
 Mod8tables[2] = Content.getComponent("MOD1Table59");
 Mod8tables[3] = Content.getComponent("MOD1Table60");
-Mod8tables[4] = Content.getComponent("MOD1Table61");
-Mod8tables[5] = Content.getComponent("MOD1Table62");
-Mod8tables[6] = Content.getComponent("MOD1Table63");
-Mod8tables[7] = Content.getComponent("MOD1Table64");
+
 
 const var Mod8SPs = []
 
@@ -741,11 +637,6 @@ Mod8SPs[0] = Content.getComponent("Mod1SP57");
 Mod8SPs[1] = Content.getComponent("Mod1SP58");
 Mod8SPs[2] = Content.getComponent("Mod1SP59");
 Mod8SPs[3] = Content.getComponent("Mod1SP60");
-Mod8SPs[4] = Content.getComponent("Mod1SP61");
-Mod8SPs[5] = Content.getComponent("Mod1SP62");
-Mod8SPs[6] = Content.getComponent("Mod1SP63");
-Mod8SPs[7] = Content.getComponent("Mod1SP64");
-
 
 
 const var modpreset7 = Content.getComponent("modpreset6");
@@ -772,10 +663,7 @@ mod9tables[0] = Content.getComponent("MOD1Table65");
 mod9tables[1] = Content.getComponent("MOD1Table66");
 mod9tables[2] = Content.getComponent("MOD1Table67");
 mod9tables[3] = Content.getComponent("MOD1Table68");
-mod9tables[4] = Content.getComponent("MOD1Table69");
-mod9tables[5] = Content.getComponent("MOD1Table70");
-mod9tables[6] = Content.getComponent("MOD1Table71");
-mod9tables[7] = Content.getComponent("MOD1Table72");
+
 
 const var mod9SPs = []
 
@@ -783,12 +671,6 @@ mod9SPs[0] = Content.getComponent("Mod1SP65");
 mod9SPs[1] = Content.getComponent("Mod1SP66");
 mod9SPs[2] = Content.getComponent("Mod1SP67");
 mod9SPs[3] = Content.getComponent("Mod1SP68");
-mod9SPs[4] = Content.getComponent("Mod1SP69");
-mod9SPs[5] = Content.getComponent("Mod1SP70");
-mod9SPs[6] = Content.getComponent("Mod1SP71");
-mod9SPs[7] = Content.getComponent("Mod1SP72");
-
-
 
 const var modpreset8 = Content.getComponent("modpreset8");
 
@@ -813,10 +695,7 @@ mod10tables[0] = Content.getComponent("MOD1Table73");
 mod10tables[1] = Content.getComponent("MOD1Table74");
 mod10tables[2] = Content.getComponent("MOD1Table75");
 mod10tables[3] = Content.getComponent("MOD1Table76");
-mod10tables[4] = Content.getComponent("MOD1Table77");
-mod10tables[5] = Content.getComponent("MOD1Table78");
-mod10tables[6] = Content.getComponent("MOD1Table79");
-mod10tables[7] = Content.getComponent("MOD1Table80");
+
 
 const var mod10SPs = []
 
@@ -824,11 +703,6 @@ mod10SPs[0] = Content.getComponent("Mod1SP73");
 mod10SPs[1] = Content.getComponent("Mod1SP74");
 mod10SPs[2] = Content.getComponent("Mod1SP75");
 mod10SPs[3] = Content.getComponent("Mod1SP76");
-mod10SPs[4] = Content.getComponent("Mod1SP77");
-mod10SPs[5] = Content.getComponent("Mod1SP78");
-mod10SPs[6] = Content.getComponent("Mod1SP79");
-mod10SPs[7] = Content.getComponent("Mod1SP80");
-
 
 
 const var modpreset9 = Content.getComponent("modpreset9");
@@ -854,10 +728,6 @@ mod11tables[0] = Content.getComponent("MOD1Table81");
 mod11tables[1] = Content.getComponent("MOD1Table82");
 mod11tables[2] = Content.getComponent("MOD1Table83");
 mod11tables[3] = Content.getComponent("MOD1Table84");
-mod11tables[4] = Content.getComponent("MOD1Table85");
-mod11tables[5] = Content.getComponent("MOD1Table86");
-mod11tables[6] = Content.getComponent("MOD1Table87");
-mod11tables[7] = Content.getComponent("MOD1Table88");
 
 const var mod11SPs = []
 
@@ -865,12 +735,6 @@ mod11SPs[0] = Content.getComponent("Mod1SP81");
 mod11SPs[1] = Content.getComponent("Mod1SP82");
 mod11SPs[2] = Content.getComponent("Mod1SP83");
 mod11SPs[3] = Content.getComponent("Mod1SP84");
-mod11SPs[4] = Content.getComponent("Mod1SP85");
-mod11SPs[5] = Content.getComponent("Mod1SP86");
-mod11SPs[6] = Content.getComponent("Mod1SP87");
-mod11SPs[7] = Content.getComponent("Mod1SP88");
-
-
 
 const var modpreset10 = Content.getComponent("modpreset10");
 
@@ -895,10 +759,6 @@ mod12tables[0] = Content.getComponent("MOD1Table89");
 mod12tables[1] = Content.getComponent("MOD1Table90");
 mod12tables[2] = Content.getComponent("MOD1Table91");
 mod12tables[3] = Content.getComponent("MOD1Table92");
-mod12tables[4] = Content.getComponent("MOD1Table93");
-mod12tables[5] = Content.getComponent("MOD1Table94");
-mod12tables[6] = Content.getComponent("MOD1Table95");
-mod12tables[7] = Content.getComponent("MOD1Table96");
 
 const var mod12SPs = []
 
@@ -906,12 +766,6 @@ mod12SPs[0] = Content.getComponent("Mod1SP89");
 mod12SPs[1] = Content.getComponent("Mod1SP90");
 mod12SPs[2] = Content.getComponent("Mod1SP91");
 mod12SPs[3] = Content.getComponent("Mod1SP92");
-mod12SPs[4] = Content.getComponent("Mod1SP93");
-mod12SPs[5] = Content.getComponent("Mod1SP94");
-mod12SPs[6] = Content.getComponent("Mod1SP95");
-mod12SPs[7] = Content.getComponent("Mod1SP96");
-
-
 
 const var modpreset11 = Content.getComponent("modpreset11");
 

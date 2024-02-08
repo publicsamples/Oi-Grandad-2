@@ -15,3 +15,10 @@ Presets/Autosave_3.hip
 Presets/Autosave_4.hip
 Presets/Autosave_5.hip
 DspNetworks/.DS_Store
+*.wav
+*.aif
+*.ndx
+*.preset
+.DS_Store
+*.dat
+*.aiff
