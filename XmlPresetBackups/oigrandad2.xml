@@ -300,8 +300,8 @@
             <Control type="ScriptSliderPack" id="SliderPack2" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack3" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack4" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform" value="0.0" data="{PROJECT_FOLDER}STBELL-130-02.1.wav"
-                     rangeStart="0" rangeEnd="177231"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptComboBox" id="OutputSelector" value="1.0"/>
             <Control type="ScriptSlider" id="pitchdiv2" value="4.0"/>
             <Control type="ScriptButton" id="psync2" value="0.0"/>
@@ -355,8 +355,8 @@
             <Control type="ScriptSliderPack" id="SliderPack6" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack7" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack8" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0.0" data="{PROJECT_FOLDER}BlowOut142-01.1.wav"
-                     rangeStart="0" rangeEnd="81127"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptComboBox" id="OutputSelector1" value="1.0"/>
             <Control type="ScriptSlider" id="pitchdiv3" value="8.0"/>
             <Control type="ScriptButton" id="psync3" value="0.0"/>
@@ -410,8 +410,8 @@
             <Control type="ScriptSliderPack" id="SliderPack10" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack11" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack12" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform2" value="0.0" data="{PROJECT_FOLDER}perc133.1.wav"
-                     rangeStart="0" rangeEnd="86616"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform2" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptComboBox" id="OutputSelector2" value="1.0"/>
             <Control type="ScriptSlider" id="pitchdiv4" value="4.0"/>
             <Control type="ScriptButton" id="psync4" value="0.0"/>
@@ -465,8 +465,8 @@
             <Control type="ScriptSliderPack" id="SliderPack14" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack15" value="2.0" data="16....f+....9C..........."/>
             <Control type="ScriptSliderPack" id="SliderPack16" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data="{PROJECT_FOLDER}STBELL-130-03.1.wav"
-                     rangeStart="0" rangeEnd="177231"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptComboBox" id="OutputSelector3" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel52" value="0.0"/>
             <Control type="ScriptSlider" id="pos24" value="0.5"/>
@@ -576,8 +576,8 @@
             <Control type="ScriptButton" id="mute9" value="0.0"/>
             <Control type="ScriptSlider" id="pos169" value="-100.0"/>
             <Control type="ScriptSlider" id="pos170" value="-10.89999866485596"/>
-            <Control type="ScriptButton" id="RrLed2" value="0.0"/>
-            <Control type="ScriptButton" id="RrLed3" value="1.0"/>
+            <Control type="ScriptButton" id="RrLed2" value="1.0"/>
+            <Control type="ScriptButton" id="RrLed3" value="0.0"/>
             <Control type="ScriptButton" id="RrLed4" value="0.0"/>
             <Control type="ScriptButton" id="RrLed5" value="0.0"/>
             <Control type="ScriptButton" id="RrLed1" value="0.0"/>
@@ -1214,7 +1214,7 @@
                 <ContentProperties DeviceType="Desktop"/>
               </UIData>
             </Processor>
-            <Processor Type="SimpleGain" ID="Simple Gain3" Bypassed="0" Gain="-5.480002403259277"
+            <Processor Type="SimpleGain" ID="Simple Gain3" Bypassed="0" Gain="-5.480003356933594"
                        Delay="0.0" Width="100.0" Balance="0.0" InvertPolarity="0.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1.0">

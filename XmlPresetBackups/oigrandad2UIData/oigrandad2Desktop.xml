@@ -3944,7 +3944,7 @@
                  numStrips="200.0" middlePosition="-18.0" dragDirection="Vertical"
                  showValuePopup="Below" isPluginParameter="1" pluginParameterName="position1"
                  scaleFactor="0.8999999761581421" mode="Decibel" min="-100.0"
-                 max="0.0" stepSize="0.1" suffix=" dB"/>
+                 max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
       <Component type="ScriptLabel" id="semi246" x="80.0" y="1.0" textColour="4280884766"
                  width="60.0" height="20.0" fontName="Montserrat" editable="0"
                  parentComponent="master" fontStyle="Regular" text="MASTER"/>
