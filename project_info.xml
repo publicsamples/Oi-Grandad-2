@@ -38,4 +38,6 @@
   <VST3Category value=""/>
   <OverwriteOldUserPresets value="No"/>
   <DefaultUserPreset value=""/>
+  <CompileWithPerfetto value="No"/>
+  <CompileWithDebugSymbols value="No"/>
 </ProjectSettings>

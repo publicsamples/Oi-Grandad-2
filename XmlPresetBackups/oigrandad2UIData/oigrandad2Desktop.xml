@@ -519,7 +519,7 @@
   </Component>
   <Component type="ScriptPanel" id="MOD2" x="658.0" y="3.0" width="240.0"
              height="670.0" itemColour="13023914" itemColour2="13023914" textColour="0"
-             saveInPreset="1" bgColour="13023914" locked="1">
+             saveInPreset="1" bgColour="13023914" locked="1" visible="0">
     <Component type="ScriptPanel" id="seq5" x="7.0" y="11.0" width="220.0" height="150.0"
                itemColour="4291213994" itemColour2="4291213994" bgColour="2039712124"
                textColour="4288977549" text="*" borderRadius="4.0" parentComponent="MOD2"
@@ -1043,7 +1043,7 @@
   </Component>
   <Component type="ScriptPanel" id="MOD3" x="658.0" y="3.0" width="240.0"
              height="670.0" itemColour="13023914" itemColour2="13023914" textColour="0"
-             saveInPreset="1" bgColour="13023914" locked="1" visible="0">
+             saveInPreset="1" bgColour="13023914" locked="1">
     <Component type="ScriptPanel" id="seq9" x="7.0" y="11.0" width="220.0" height="150.0"
                itemColour="4291213994" itemColour2="4291213994" bgColour="2039712124"
                textColour="4288977549" text="*" borderRadius="4.0" parentComponent="MOD3"
@@ -1732,7 +1732,7 @@
                    height="20.0" processorId="gran" parameterId="gmulti" parentComponent="granular1"
                    filmstripImage="{PROJECT_FOLDER}k2.png" numStrips="200.0" dragDirection="Vertical"
                    middlePosition="8.5" defaultValue="1.0" scaleFactor="0.5" max="16.0"
-                   min="1.0" stepSize="1.0" showValuePopup="Below"/>
+                   min="1.0" stepSize="1.0" showValuePopup="Below" visible="0"/>
         <Component type="ScriptButton" id="gsync1" x="156.0" y="82.0" width="20.0"
                    height="25.0" scaleFactor="0.4000000059604645" parentComponent="granular1"
                    itemColour="4292689201" filmstripImage="{PROJECT_FOLDER}switch_toggle2.png"

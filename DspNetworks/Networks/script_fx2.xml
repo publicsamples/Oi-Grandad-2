@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="script_fx2" Version="0.0.0">
+<Network ID="script_fx2" Version="0.0.0" SuspendOnSilence="1">
   <Node FactoryPath="container.chain" ID="script_fx2" Bypassed="0" ShowParameters="1">
     <Nodes>
       <Node ID="global_mod" FactoryPath="core.global_mod" Bypassed="0">

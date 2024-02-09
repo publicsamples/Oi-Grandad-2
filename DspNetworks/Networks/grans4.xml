@@ -1122,8 +1122,8 @@
                       <Node ID="input_toggle115" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value1" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2" Automated="1"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="input_toggle116" ParameterId="Value1"/>
@@ -1132,8 +1132,8 @@
                       <Node ID="input_toggle116" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.75" ID="Value1" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2" Automated="1"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="granulator1" ParameterId="Density"/>
@@ -1142,8 +1142,8 @@
                       <Node ID="input_toggle117" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value1" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2" Automated="1"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="input_toggle116" ParameterId="Value2"/>
@@ -1489,7 +1489,7 @@
                                  ID="UnsyncedTime" Automated="1"/>
                     </Parameters>
                   </Node>
-                  <Node ID="converter16" FactoryPath="control.converter" Bypassed="1">
+                  <Node ID="converter16" FactoryPath="control.converter" Bypassed="0">
                     <Properties>
                       <Property ID="Mode" Value="Ms2Freq"/>
                     </Properties>
@@ -1505,7 +1505,7 @@
                       <Node ID="granulator1" FactoryPath="core.granulator" Bypassed="0">
                         <ComplexData>
                           <AudioFiles>
-                            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
+                            <AudioFile Index="0" MinValue="0" MaxValue="135529"/>
                           </AudioFiles>
                         </ComplexData>
                         <Parameters>
@@ -1513,7 +1513,7 @@
                           <Parameter MinValue="0.5" MaxValue="2.0" SkewFactor="0.6309297680854797"
                                      ID="Pitch" Automated="1"/>
                           <Parameter MinValue="20.0" MaxValue="3200.0" ID="GrainSize" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Density" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Density" Automated="1"/>
                           <Parameter MinValue="0.0" MaxValue="1.0" ID="Spread" Automated="1"/>
                           <Parameter MinValue="0.0" MaxValue="1.0" ID="Detune" Automated="1"/>
                         </Parameters>
@@ -1873,8 +1873,8 @@
                       <Node ID="input_toggle169" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="input_toggle170" ParameterId="Value1"/>
@@ -1883,8 +1883,8 @@
                       <Node ID="input_toggle170" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.75" ID="Value1" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2" Automated="1"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="granulator4" ParameterId="Density"/>
@@ -1893,8 +1893,8 @@
                       <Node ID="input_toggle171" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="input_toggle170" ParameterId="Value2"/>
@@ -2238,7 +2238,7 @@
                                  ID="UnsyncedTime" Automated="1"/>
                     </Parameters>
                   </Node>
-                  <Node ID="converter19" FactoryPath="control.converter" Bypassed="1">
+                  <Node ID="converter19" FactoryPath="control.converter" Bypassed="0">
                     <Properties>
                       <Property ID="Mode" Value="Ms2Freq"/>
                     </Properties>
@@ -2254,7 +2254,7 @@
                       <Node ID="granulator4" FactoryPath="core.granulator" Bypassed="0">
                         <ComplexData>
                           <AudioFiles>
-                            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
+                            <AudioFile Index="0" MinValue="0" MaxValue="135529"/>
                           </AudioFiles>
                         </ComplexData>
                         <Parameters>
@@ -2262,7 +2262,7 @@
                           <Parameter MinValue="0.5" MaxValue="2.0" SkewFactor="0.6309297680854797"
                                      ID="Pitch" Automated="1"/>
                           <Parameter MinValue="20.0" MaxValue="3200.0" ID="GrainSize" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Density" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Density" Automated="1"/>
                           <Parameter MinValue="0.0" MaxValue="1.0" ID="Spread" Automated="1"/>
                           <Parameter MinValue="0.0" MaxValue="1.0" ID="Detune" Automated="1"/>
                         </Parameters>
@@ -2622,8 +2622,8 @@
                       <Node ID="input_toggle151" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="input_toggle152" ParameterId="Value1"/>
@@ -2632,8 +2632,8 @@
                       <Node ID="input_toggle152" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.75" ID="Value1" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2" Automated="1"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="granulator3" ParameterId="Density"/>
@@ -2642,8 +2642,8 @@
                       <Node ID="input_toggle153" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="input_toggle152" ParameterId="Value2"/>
@@ -2987,7 +2987,7 @@
                                  ID="UnsyncedTime" Automated="1"/>
                     </Parameters>
                   </Node>
-                  <Node ID="converter18" FactoryPath="control.converter" Bypassed="1">
+                  <Node ID="converter18" FactoryPath="control.converter" Bypassed="0">
                     <Properties>
                       <Property ID="Mode" Value="Ms2Freq"/>
                     </Properties>
@@ -3003,7 +3003,7 @@
                       <Node ID="granulator3" FactoryPath="core.granulator" Bypassed="0">
                         <ComplexData>
                           <AudioFiles>
-                            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
+                            <AudioFile Index="0" MinValue="0" MaxValue="135529"/>
                           </AudioFiles>
                         </ComplexData>
                         <Parameters>
@@ -3011,7 +3011,7 @@
                           <Parameter MinValue="0.5" MaxValue="2.0" SkewFactor="0.6309297680854797"
                                      ID="Pitch" Automated="1"/>
                           <Parameter MinValue="20.0" MaxValue="3200.0" ID="GrainSize" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Density" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Density" Automated="1"/>
                           <Parameter MinValue="0.0" MaxValue="1.0" ID="Spread" Automated="1"/>
                           <Parameter MinValue="0.0" MaxValue="1.0" ID="Detune" Automated="1"/>
                         </Parameters>
@@ -3371,8 +3371,8 @@
                       <Node ID="input_toggle133" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="input_toggle134" ParameterId="Value1"/>
@@ -3381,8 +3381,8 @@
                       <Node ID="input_toggle134" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.75" ID="Value1" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2" Automated="1"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="granulator2" ParameterId="Density"/>
@@ -3391,8 +3391,8 @@
                       <Node ID="input_toggle135" FactoryPath="control.input_toggle" Bypassed="0">
                         <Parameters>
                           <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Input" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Value2"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Value2"/>
                         </Parameters>
                         <ModulationTargets>
                           <Connection NodeId="input_toggle134" ParameterId="Value2"/>
@@ -3736,7 +3736,7 @@
                                  ID="UnsyncedTime" Automated="1"/>
                     </Parameters>
                   </Node>
-                  <Node ID="converter17" FactoryPath="control.converter" Bypassed="1">
+                  <Node ID="converter17" FactoryPath="control.converter" Bypassed="0">
                     <Properties>
                       <Property ID="Mode" Value="Ms2Freq"/>
                     </Properties>
@@ -3752,7 +3752,7 @@
                       <Node ID="granulator2" FactoryPath="core.granulator" Bypassed="0">
                         <ComplexData>
                           <AudioFiles>
-                            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
+                            <AudioFile Index="0" MinValue="0" MaxValue="135529"/>
                           </AudioFiles>
                         </ComplexData>
                         <Parameters>
@@ -3760,7 +3760,7 @@
                           <Parameter MinValue="0.5" MaxValue="2.0" SkewFactor="0.6309297680854797"
                                      ID="Pitch" Automated="1"/>
                           <Parameter MinValue="20.0" MaxValue="3200.0" ID="GrainSize" Automated="1"/>
-                          <Parameter MinValue="0.0" MaxValue="0.8" ID="Density" Automated="1"/>
+                          <Parameter MinValue="0.0" MaxValue="0.6" ID="Density" Automated="1"/>
                           <Parameter MinValue="0.0" MaxValue="1.0" ID="Spread" Automated="1"/>
                           <Parameter MinValue="0.0" MaxValue="1.0" ID="Detune" Automated="1"/>
                         </Parameters>

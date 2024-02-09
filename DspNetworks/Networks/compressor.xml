@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="compressor" Version="0.0.0">
+<Network ID="compressor" Version="0.0.0" SuspendOnSilence="1">
   <Node FactoryPath="container.chain" ID="compressor" Bypassed="0" ShowParameters="1">
     <Nodes>
       <Node ID="comp" FactoryPath="dynamics.comp" Bypassed="0">

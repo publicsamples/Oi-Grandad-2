@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="track" Version="0.0.0">
+<Network ID="track" Version="0.0.0" SuspendOnSilence="1">
   <Node FactoryPath="container.chain" ID="track" Bypassed="0" ShowParameters="1">
     <Nodes>
       <Node ID="a1" FactoryPath="container.chain" Bypassed="0">

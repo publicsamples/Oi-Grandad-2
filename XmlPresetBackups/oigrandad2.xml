@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Processor Type="SynthChain" ID="oigrandad2" Bypassed="0" Gain="0.2599999904632568"
+<Processor Type="SynthChain" ID="oigrandad2" Bypassed="0" Gain="0.2800000011920929"
            Balance="0.0" VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0"
            packageName="" BuildVersion="650">
   <ChildProcessors>
@@ -153,7 +153,7 @@
             <Control type="ScriptButton" id="stype34" value="0.0"/>
             <Control type="ScriptComboBox" id="ComboBox23" value="0.0"/>
             <Control type="ScriptSlider" id="Knob100" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob101" value="8.0"/>
+            <Control type="ScriptSlider" id="Knob101" value="15.0"/>
             <Control type="ScriptSlider" id="Knob102" value="0.0"/>
             <Control type="ScriptButton" id="seq1type8" value="0.0"/>
             <Control type="ScriptComboBox" id="ComboBox24" value="0.0"/>
@@ -247,48 +247,48 @@
             <Control type="ScriptSliderPack" id="Mod1SP92" value="-1.0" data="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
             <Control type="ScriptSlider" id="Knob7" value="0.0"/>
             <Control type="ScriptComboBox" id="ExpansionSelector" value="1.0"/>
-            <Control type="ScriptComboBox" id="modpage" value="2.0"/>
-            <Control type="ScriptSlider" id="pitchdiv1" value="2.0"/>
+            <Control type="ScriptComboBox" id="modpage" value="3.0"/>
+            <Control type="ScriptSlider" id="pitchdiv1" value="4.0"/>
             <Control type="ScriptButton" id="psync1" value="0.0"/>
             <Control type="ScriptSlider" id="pos" value="0.0"/>
-            <Control type="ScriptSlider" id="posmod" value="0.699999988079071"/>
+            <Control type="ScriptSlider" id="posmod" value="0.8299999833106995"/>
             <Control type="ScriptComboBox" id="pos1modsel" value="5.0"/>
             <Control type="ScriptComboBox" id="pos1modsel5" value="4.0"/>
-            <Control type="ScriptSlider" id="graindiv1" value="2.0"/>
-            <Control type="ScriptButton" id="gsync1" value="0.0"/>
-            <Control type="ScriptComboBox" id="pos1modsel6" value="2.0"/>
+            <Control type="ScriptSlider" id="graindiv1" value="9.0"/>
+            <Control type="ScriptButton" id="gsync1" value="1.0"/>
+            <Control type="ScriptComboBox" id="pos1modsel6" value="1.0"/>
             <Control type="ScriptComboBox" id="pitch1modsel" value="5.0"/>
             <Control type="ScriptSlider" id="pitchmod1" value="0.0"/>
-            <Control type="ScriptSlider" id="pos3" value="0.5199999809265137"/>
-            <Control type="ScriptComboBox" id="pos1modsel8" value="3.0"/>
-            <Control type="ScriptComboBox" id="pos1modsel9" value="1.0"/>
+            <Control type="ScriptSlider" id="pos3" value="0.5099999904632568"/>
+            <Control type="ScriptComboBox" id="pos1modsel8" value="1.0"/>
+            <Control type="ScriptComboBox" id="pos1modsel9" value="8.0"/>
             <Control type="ScriptSlider" id="posmod5" value="0.0"/>
-            <Control type="ScriptSlider" id="pos4" value="0.5199999809265137"/>
+            <Control type="ScriptSlider" id="pos4" value="1.0"/>
             <Control type="ScriptSlider" id="pos5" value="0.0"/>
             <Control type="ScriptSlider" id="posmod6" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel10" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel17" value="1.0"/>
-            <Control type="ScriptSlider" id="pos6" value="0.0"/>
+            <Control type="ScriptSlider" id="pos6" value="0.300000011920929"/>
             <Control type="ScriptSlider" id="posmod7" value="0.0"/>
-            <Control type="ScriptComboBox" id="pos1modsel18" value="0.0"/>
-            <Control type="ScriptComboBox" id="pos1modsel19" value="1.0"/>
+            <Control type="ScriptComboBox" id="pos1modsel18" value="5.0"/>
+            <Control type="ScriptComboBox" id="pos1modsel19" value="4.0"/>
             <Control type="ScriptComboBox" id="pos1modsel20" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel21" value="0.0"/>
             <Control type="ScriptSlider" id="posmod8" value="0.0"/>
-            <Control type="ScriptSlider" id="pos7" value="0.05999999865889549"/>
+            <Control type="ScriptSlider" id="pos7" value="0.0"/>
             <Control type="ScriptSlider" id="pos8" value="1.0"/>
             <Control type="ScriptSlider" id="posmod17" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel38" value="5.0"/>
             <Control type="ScriptSlider" id="pos19" value="1.0"/>
-            <Control type="ScriptSlider" id="pos20" value="1.0"/>
+            <Control type="ScriptSlider" id="pos20" value="0.4300000071525574"/>
             <Control type="ScriptSlider" id="pos21" value="1.0"/>
-            <Control type="ScriptSlider" id="pos22" value="0.7599999904632568"/>
+            <Control type="ScriptSlider" id="pos22" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel43" value="13.0"/>
             <Control type="ScriptSlider" id="posmod18" value="0.0"/>
             <Control type="ScriptSlider" id="pos110" value="0.0"/>
-            <Control type="ScriptComboBox" id="pos1modsel45" value="2.0"/>
-            <Control type="ScriptSlider" id="posmod19" value="-0.239999994635582"/>
-            <Control type="ScriptSlider" id="pos14" value="0.9800000190734863"/>
+            <Control type="ScriptComboBox" id="pos1modsel45" value="13.0"/>
+            <Control type="ScriptSlider" id="posmod19" value="0.0"/>
+            <Control type="ScriptSlider" id="pos14" value="0.3700000047683716"/>
             <Control type="ScriptSlider" id="posmod13" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel27" value="3.0"/>
             <Control type="ScriptSlider" id="pos15" value="0.0"/>
@@ -300,10 +300,10 @@
             <Control type="ScriptSliderPack" id="SliderPack2" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack3" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack4" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform" value="0.0" data=""
-                     rangeStart="0" rangeEnd="0"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform" value="0.0" data="{PROJECT_FOLDER}RNGGIT-85.2-02.1.wav"
+                     rangeStart="0" rangeEnd="135529"/>
             <Control type="ScriptComboBox" id="OutputSelector" value="1.0"/>
-            <Control type="ScriptSlider" id="pitchdiv2" value="4.0"/>
+            <Control type="ScriptSlider" id="pitchdiv2" value="1.0"/>
             <Control type="ScriptButton" id="psync2" value="0.0"/>
             <Control type="ScriptSlider" id="pos1" value="0.0"/>
             <Control type="ScriptSlider" id="posmod1" value="1.0"/>
@@ -318,12 +318,12 @@
             <Control type="ScriptComboBox" id="pos1modsel12" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel13" value="1.0"/>
             <Control type="ScriptSlider" id="posmod9" value="0.0"/>
-            <Control type="ScriptSlider" id="pos11" value="0.0"/>
+            <Control type="ScriptSlider" id="pos11" value="1.0"/>
             <Control type="ScriptSlider" id="pos12" value="0.0"/>
             <Control type="ScriptSlider" id="posmod10" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel14" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel24" value="1.0"/>
-            <Control type="ScriptSlider" id="pos13" value="1.0"/>
+            <Control type="ScriptSlider" id="pos13" value="0.6100000143051147"/>
             <Control type="ScriptSlider" id="posmod11" value="-0.5699999928474426"/>
             <Control type="ScriptComboBox" id="pos1modsel25" value="7.0"/>
             <Control type="ScriptComboBox" id="pos1modsel26" value="1.0"/>
@@ -343,8 +343,8 @@
             <Control type="ScriptSlider" id="pos113" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel49" value="3.0"/>
             <Control type="ScriptSlider" id="posmod33" value="0.2199999988079071"/>
-            <Control type="ScriptSlider" id="pos87" value="0.3499999940395355"/>
-            <Control type="ScriptSlider" id="posmod34" value="0.0"/>
+            <Control type="ScriptSlider" id="pos87" value="0.449999988079071"/>
+            <Control type="ScriptSlider" id="posmod34" value="-0.02999999932944775"/>
             <Control type="ScriptComboBox" id="pos1modsel50" value="1.0"/>
             <Control type="ScriptSlider" id="pos88" value="0.0"/>
             <Control type="ScriptSlider" id="pos89" value="1.0"/>
@@ -355,8 +355,8 @@
             <Control type="ScriptSliderPack" id="SliderPack6" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack7" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack8" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0.0" data=""
-                     rangeStart="0" rangeEnd="0"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0.0" data="{PROJECT_FOLDER}RNGGIT-85.2-02.1.wav"
+                     rangeStart="0" rangeEnd="135529"/>
             <Control type="ScriptComboBox" id="OutputSelector1" value="1.0"/>
             <Control type="ScriptSlider" id="pitchdiv3" value="8.0"/>
             <Control type="ScriptButton" id="psync3" value="0.0"/>
@@ -364,7 +364,7 @@
             <Control type="ScriptSlider" id="posmod2" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel2" value="10.0"/>
             <Control type="ScriptComboBox" id="pos1modsel66" value="1.0"/>
-            <Control type="ScriptSlider" id="graindiv3" value="1.0"/>
+            <Control type="ScriptSlider" id="graindiv3" value="10.0"/>
             <Control type="ScriptButton" id="gsync3" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel67" value="1.0"/>
             <Control type="ScriptComboBox" id="pitch1modsel2" value="8.0"/>
@@ -373,19 +373,19 @@
             <Control type="ScriptComboBox" id="pos1modsel69" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel70" value="1.0"/>
             <Control type="ScriptSlider" id="posmod40" value="0.0"/>
-            <Control type="ScriptSlider" id="pos97" value="0.0"/>
+            <Control type="ScriptSlider" id="pos97" value="1.0"/>
             <Control type="ScriptSlider" id="pos98" value="0.0"/>
             <Control type="ScriptSlider" id="posmod41" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel71" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel72" value="1.0"/>
-            <Control type="ScriptSlider" id="pos99" value="0.1500000059604645"/>
+            <Control type="ScriptSlider" id="pos99" value="0.5199999809265137"/>
             <Control type="ScriptSlider" id="posmod42" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel73" value="7.0"/>
             <Control type="ScriptComboBox" id="pos1modsel74" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel75" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel76" value="1.0"/>
             <Control type="ScriptSlider" id="posmod43" value="0.0"/>
-            <Control type="ScriptSlider" id="pos100" value="0.0"/>
+            <Control type="ScriptSlider" id="pos100" value="0.8899999856948853"/>
             <Control type="ScriptSlider" id="pos101" value="1.0"/>
             <Control type="ScriptSlider" id="posmod44" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel77" value="1.0"/>
@@ -398,7 +398,7 @@
             <Control type="ScriptSlider" id="pos123" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel79" value="1.0"/>
             <Control type="ScriptSlider" id="posmod46" value="0.0"/>
-            <Control type="ScriptSlider" id="pos124" value="0.7300000190734863"/>
+            <Control type="ScriptSlider" id="pos124" value="0.6299999952316284"/>
             <Control type="ScriptSlider" id="posmod47" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel80" value="1.0"/>
             <Control type="ScriptSlider" id="pos125" value="0.0"/>
@@ -410,10 +410,10 @@
             <Control type="ScriptSliderPack" id="SliderPack10" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack11" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack12" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform2" value="0.0" data=""
-                     rangeStart="0" rangeEnd="0"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform2" value="0.0" data="{PROJECT_FOLDER}RNGGIT-85.2-02.1.wav"
+                     rangeStart="0" rangeEnd="135529"/>
             <Control type="ScriptComboBox" id="OutputSelector2" value="1.0"/>
-            <Control type="ScriptSlider" id="pitchdiv4" value="4.0"/>
+            <Control type="ScriptSlider" id="pitchdiv4" value="2.0"/>
             <Control type="ScriptButton" id="psync4" value="0.0"/>
             <Control type="ScriptSlider" id="pos135" value="0.0"/>
             <Control type="ScriptSlider" id="posmod52" value="0.5400000214576721"/>
@@ -428,12 +428,12 @@
             <Control type="ScriptComboBox" id="pos1modsel94" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel95" value="1.0"/>
             <Control type="ScriptSlider" id="posmod54" value="0.0"/>
-            <Control type="ScriptSlider" id="pos137" value="0.4300000071525574"/>
+            <Control type="ScriptSlider" id="pos137" value="1.0"/>
             <Control type="ScriptSlider" id="pos138" value="0.01999999955296516"/>
             <Control type="ScriptSlider" id="posmod55" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel96" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel97" value="1.0"/>
-            <Control type="ScriptSlider" id="pos139" value="0.0"/>
+            <Control type="ScriptSlider" id="pos139" value="0.6499999761581421"/>
             <Control type="ScriptSlider" id="posmod56" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel98" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel99" value="1.0"/>
@@ -453,7 +453,7 @@
             <Control type="ScriptSlider" id="pos146" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel104" value="1.0"/>
             <Control type="ScriptSlider" id="posmod60" value="0.0"/>
-            <Control type="ScriptSlider" id="pos147" value="0.4600000083446503"/>
+            <Control type="ScriptSlider" id="pos147" value="0.5"/>
             <Control type="ScriptSlider" id="posmod61" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel105" value="1.0"/>
             <Control type="ScriptSlider" id="pos148" value="0.0"/>
@@ -465,8 +465,8 @@
             <Control type="ScriptSliderPack" id="SliderPack14" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack15" value="2.0" data="16....f+....9C..........."/>
             <Control type="ScriptSliderPack" id="SliderPack16" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data=""
-                     rangeStart="0" rangeEnd="0"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data="{PROJECT_FOLDER}RNGGIT-85.2-02.1.wav"
+                     rangeStart="0" rangeEnd="135529"/>
             <Control type="ScriptComboBox" id="OutputSelector3" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel52" value="0.0"/>
             <Control type="ScriptSlider" id="pos24" value="0.5"/>
@@ -487,28 +487,28 @@
             <Control type="ScriptSlider" id="pos164" value="-3.699998617172241"/>
             <Control type="ScriptButton" id="mute5" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel56" value="7.0"/>
-            <Control type="ScriptSlider" id="posmod30" value="0.239999994635582"/>
-            <Control type="ScriptSlider" id="pos72" value="0.4799999892711639"/>
-            <Control type="ScriptSliderPack" id="ScriptSliderPack1" value="4.0" data="32.MyLS+.....vGEt1O.....vdT33ilYlwO..........."/>
-            <Control type="ScriptSliderPack" id="ScriptSliderPack2" value="3.0" data="32.....+fT357CtdTzO...P+T35Q8ydT31OgqGU+jBWO5C"/>
-            <Control type="ScriptSlider" id="pos73" value="0.6100000143051147"/>
-            <Control type="ScriptSlider" id="pos74" value="0.8399999737739563"/>
-            <Control type="ScriptSlider" id="pos75" value="0.3700000047683716"/>
+            <Control type="ScriptSlider" id="posmod30" value="1.0"/>
+            <Control type="ScriptSlider" id="pos72" value="0.0"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack1" value="0.0" data="32...........PyLyTOov0C97nv04yv0ipOMyLy9b8nv6C"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack2" value="7.0" data="32.gqGU+....9C...3O...f+....9C...3O...f+....9C"/>
+            <Control type="ScriptSlider" id="pos73" value="0.2199999988079071"/>
+            <Control type="ScriptSlider" id="pos74" value="0.5699999928474426"/>
+            <Control type="ScriptSlider" id="pos75" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel57" value="8.0"/>
-            <Control type="ScriptSlider" id="pos77" value="1.0"/>
+            <Control type="ScriptSlider" id="pos77" value="0.7699999809265137"/>
             <Control type="ScriptSlider" id="posmod31" value="0.8799999952316284"/>
-            <Control type="ScriptSlider" id="pos79" value="0.3600000143051147"/>
+            <Control type="ScriptSlider" id="pos79" value="0.7799999713897705"/>
             <Control type="ScriptSlider" id="pos80" value="0.9200000166893005"/>
             <Control type="ScriptButton" id="ScriptButton1" value="1.0"/>
             <Control type="ScriptButton" id="ScriptButton3" value="0.0"/>
             <Control type="ScriptSlider" id="pos76" value="0.25"/>
             <Control type="ScriptSlider" id="pos81" value="0.7799999713897705"/>
             <Control type="ScriptSlider" id="pos82" value="1.0"/>
-            <Control type="ScriptButton" id="mute10" value="1.0"/>
-            <Control type="ScriptSlider" id="pos172" value="24.0"/>
-            <Control type="ScriptSlider" id="pos173" value="17.0"/>
-            <Control type="ScriptSlider" id="pos174" value="0.0"/>
-            <Control type="ScriptSlider" id="sustain8" value="0.2599999904632568"/>
+            <Control type="ScriptButton" id="mute10" value="0.0"/>
+            <Control type="ScriptSlider" id="pos172" value="0.1500000059604645"/>
+            <Control type="ScriptSlider" id="pos173" value="0.5"/>
+            <Control type="ScriptSlider" id="pos174" value="0.75"/>
+            <Control type="ScriptSlider" id="sustain8" value="0.2800000011920929"/>
             <Control type="ScriptSlider" id="pos93" value="0.0"/>
             <Control type="ScriptSlider" id="pos94" value="0.0"/>
             <Control type="ScriptButton" id="mute11" value="0.0"/>
@@ -517,7 +517,7 @@
             <Control type="ScriptSliderPack" id="ScriptSliderPack3" value="6.0" data="32.HEtd+....9C...3O...f+....9C...3O...f+....9C"/>
             <Control type="ScriptSliderPack" id="ScriptSliderPack4" value="6.0" data="32.ZlYF+....9C...3O...f+....9C...3O...f+....9C"/>
             <Control type="ScriptSlider" id="pos130" value="1.0"/>
-            <Control type="ScriptSlider" id="pos131" value="0.9399999976158142"/>
+            <Control type="ScriptSlider" id="pos131" value="1.0"/>
             <Control type="ScriptSlider" id="pos133" value="0.5"/>
             <Control type="ScriptSlider" id="pos134" value="1.0"/>
             <Control type="ScriptSlider" id="pos152" value="0.5699999928474426"/>
@@ -541,7 +541,7 @@
             <Control type="ScriptSlider" id="pos49" value="0.0"/>
             <Control type="ScriptButton" id="mute7" value="1.0"/>
             <Control type="ScriptSlider" id="pos165" value="-100.0"/>
-            <Control type="ScriptSlider" id="pos166" value="-14.89999866485596"/>
+            <Control type="ScriptSlider" id="pos166" value="-100.0"/>
             <Control type="ScriptComboBox" id="pos1modsel54" value="0.0"/>
             <Control type="ScriptSlider" id="pos26" value="0.5"/>
             <Control type="ScriptSlider" id="posmod28" value="0.0"/>
@@ -558,7 +558,7 @@
             <Control type="ScriptSlider" id="pos60" value="0.0"/>
             <Control type="ScriptButton" id="mute8" value="1.0"/>
             <Control type="ScriptSlider" id="pos167" value="-100.0"/>
-            <Control type="ScriptSlider" id="pos168" value="-14.19999885559082"/>
+            <Control type="ScriptSlider" id="pos168" value="-100.0"/>
             <Control type="ScriptComboBox" id="pos1modsel55" value="0.0"/>
             <Control type="ScriptSlider" id="pos27" value="0.5"/>
             <Control type="ScriptSlider" id="posmod29" value="0.0"/>
@@ -575,7 +575,7 @@
             <Control type="ScriptSlider" id="pos71" value="0.0"/>
             <Control type="ScriptButton" id="mute9" value="0.0"/>
             <Control type="ScriptSlider" id="pos169" value="-100.0"/>
-            <Control type="ScriptSlider" id="pos170" value="-10.89999866485596"/>
+            <Control type="ScriptSlider" id="pos170" value="-100.0"/>
             <Control type="ScriptButton" id="RrLed2" value="1.0"/>
             <Control type="ScriptButton" id="RrLed3" value="0.0"/>
             <Control type="ScriptButton" id="RrLed4" value="0.0"/>
@@ -617,8 +617,8 @@
         <Processor Type="Dynamics" ID="Dynamics1" Bypassed="0" GateEnabled="0.0"
                    GateThreshold="0.0" GateAttack="1.0" GateRelease="100.0" CompressorEnabled="0.0"
                    CompressorThreshold="0.0" CompressorRatio="1.0" CompressorAttack="10.0"
-                   CompressorRelease="100.0" LimiterEnabled="1.0" LimiterThreshold="0.0"
-                   LimiterAttack="17.0" LimiterRelease="24.0" CompressorMakeup="0.0"
+                   CompressorRelease="100.0" LimiterEnabled="1.0" LimiterThreshold="0.75"
+                   LimiterAttack="0.5" LimiterRelease="0.1500000059604645" CompressorMakeup="0.0"
                    LimiterMakeup="0.0">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="8" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
@@ -776,7 +776,7 @@
               <ChildProcessors/>
               <Content/>
               <Networks>
-                <Network ID="track" Version="0.0.0"/>
+                <Network ID="track" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -787,7 +787,7 @@
               <ChildProcessors/>
               <Content/>
               <Networks>
-                <Network ID="track2" Version="0.0.0"/>
+                <Network ID="track2" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -798,7 +798,7 @@
               <ChildProcessors/>
               <Content/>
               <Networks>
-                <Network ID="track3" Version="0.0.0"/>
+                <Network ID="track3" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -809,7 +809,7 @@
               <ChildProcessors/>
               <Content/>
               <Networks>
-                <Network ID="track4" Version="0.0.0"/>
+                <Network ID="track4" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -820,7 +820,7 @@
               <ChildProcessors/>
               <Content/>
               <Networks>
-                <Network ID="vecfade" Version="0.0.0"/>
+                <Network ID="vecfade" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -897,7 +897,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="filter" Version="0.0.0"/>
+                <Network ID="filter" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -911,7 +911,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="script_fx2" Version="0.0.0"/>
+                <Network ID="script_fx2" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -925,7 +925,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="EQ" Version="0.0.0"/>
+                <Network ID="EQ" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -939,7 +939,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="compressor" Version="0.0.0"/>
+                <Network ID="compressor" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -967,7 +967,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="pan" Version="0.0.0"/>
+                <Network ID="pan" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -981,7 +981,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="vec1b" Version="0.0.0"/>
+                <Network ID="vec1b" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1124,7 +1124,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="filter" Version="0.0.0"/>
+                <Network ID="filter" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1138,7 +1138,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="script_fx2" Version="0.0.0"/>
+                <Network ID="script_fx2" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1152,7 +1152,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="EQ" Version="0.0.0"/>
+                <Network ID="EQ" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1166,7 +1166,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="compressor" Version="0.0.0"/>
+                <Network ID="compressor" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1194,7 +1194,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="pan" Version="0.0.0"/>
+                <Network ID="pan" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1259,8 +1259,8 @@
                              Send4="-1" Channel5="-1" Send5="-1" Channel6="-1" Send6="-1"
                              Channel7="-1" Send7="-1"/>
             </Processor>
-            <Processor Type="SendFX" ID="Send Effect7" Bypassed="0" Gain="-14.89999866485596"
-                       ChannelOffset="0.0" SendIndex="3.0" Smoothing="1.0">
+            <Processor Type="SendFX" ID="Send Effect7" Bypassed="0" Gain="-100.0" ChannelOffset="0.0"
+                       SendIndex="3.0" Smoothing="1.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
                   <ChildProcessors/>
@@ -1351,7 +1351,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="filter" Version="0.0.0"/>
+                <Network ID="filter" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1365,7 +1365,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="script_fx2" Version="0.0.0"/>
+                <Network ID="script_fx2" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1379,7 +1379,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="EQ" Version="0.0.0"/>
+                <Network ID="EQ" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1393,7 +1393,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="compressor" Version="0.0.0"/>
+                <Network ID="compressor" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1421,7 +1421,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="pan" Version="0.0.0"/>
+                <Network ID="pan" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1486,8 +1486,8 @@
                              Send4="-1" Channel5="-1" Send5="-1" Channel6="-1" Send6="-1"
                              Channel7="-1" Send7="-1"/>
             </Processor>
-            <Processor Type="SendFX" ID="Send Effect11" Bypassed="0" Gain="-14.19999980926514"
-                       ChannelOffset="0.0" SendIndex="3.0" Smoothing="1.0">
+            <Processor Type="SendFX" ID="Send Effect11" Bypassed="0" Gain="-100.0" ChannelOffset="0.0"
+                       SendIndex="3.0" Smoothing="1.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
                   <ChildProcessors/>
@@ -1578,7 +1578,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="filter" Version="0.0.0"/>
+                <Network ID="filter" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1592,7 +1592,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="script_fx2" Version="0.0.0"/>
+                <Network ID="script_fx2" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1606,7 +1606,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="EQ" Version="0.0.0"/>
+                <Network ID="EQ" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1620,7 +1620,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="compressor" Version="0.0.0"/>
+                <Network ID="compressor" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1648,7 +1648,7 @@
                              Channel7="-1" Send7="-1"/>
               <Content/>
               <Networks>
-                <Network ID="pan" Version="0.0.0"/>
+                <Network ID="pan" Version="0.0.0" SuspendOnSilence="1"/>
               </Networks>
               <UIData>
                 <ContentProperties DeviceType="Desktop"/>
@@ -1713,8 +1713,8 @@
                              Send4="-1" Channel5="-1" Send5="-1" Channel6="-1" Send6="-1"
                              Channel7="-1" Send7="-1"/>
             </Processor>
-            <Processor Type="SendFX" ID="Send Effect15" Bypassed="0" Gain="-10.89999961853027"
-                       ChannelOffset="0.0" SendIndex="3.0" Smoothing="1.0">
+            <Processor Type="SendFX" ID="Send Effect15" Bypassed="0" Gain="-100.0" ChannelOffset="0.0"
+                       SendIndex="3.0" Smoothing="1.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
                   <ChildProcessors/>

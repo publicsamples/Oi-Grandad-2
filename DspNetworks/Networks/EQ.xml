@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="EQ" Version="0.0.0">
+<Network ID="EQ" Version="0.0.0" SuspendOnSilence="1">
   <Node FactoryPath="container.chain" ID="EQ" Bypassed="0" ShowParameters="1">
     <Nodes>
       <Node ID="svf_eq" FactoryPath="filters.svf_eq" Bypassed="0">

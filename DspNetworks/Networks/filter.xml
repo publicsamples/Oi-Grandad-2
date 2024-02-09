@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="filter" Version="0.0.0">
+<Network ID="filter" Version="0.0.0" SuspendOnSilence="1">
   <Node FactoryPath="container.chain" ID="filter" Bypassed="0" ShowParameters="1">
     <Nodes>
       <Node ID="filter" FactoryPath="container.chain" Bypassed="0">
