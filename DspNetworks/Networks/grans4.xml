@@ -1505,7 +1505,7 @@
                       <Node ID="granulator1" FactoryPath="core.granulator" Bypassed="0">
                         <ComplexData>
                           <AudioFiles>
-                            <AudioFile Index="0" MinValue="0" MaxValue="135529"/>
+                            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
                           </AudioFiles>
                         </ComplexData>
                         <Parameters>
@@ -2254,7 +2254,7 @@
                       <Node ID="granulator4" FactoryPath="core.granulator" Bypassed="0">
                         <ComplexData>
                           <AudioFiles>
-                            <AudioFile Index="0" MinValue="0" MaxValue="135529"/>
+                            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
                           </AudioFiles>
                         </ComplexData>
                         <Parameters>
@@ -3003,7 +3003,7 @@
                       <Node ID="granulator3" FactoryPath="core.granulator" Bypassed="0">
                         <ComplexData>
                           <AudioFiles>
-                            <AudioFile Index="0" MinValue="0" MaxValue="135529"/>
+                            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
                           </AudioFiles>
                         </ComplexData>
                         <Parameters>
@@ -3752,7 +3752,7 @@
                       <Node ID="granulator2" FactoryPath="core.granulator" Bypassed="0">
                         <ComplexData>
                           <AudioFiles>
-                            <AudioFile Index="0" MinValue="0" MaxValue="135529"/>
+                            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
                           </AudioFiles>
                         </ComplexData>
                         <Parameters>

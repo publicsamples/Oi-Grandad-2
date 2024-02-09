@@ -263,7 +263,7 @@
             <Control type="ScriptComboBox" id="pos1modsel8" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel9" value="8.0"/>
             <Control type="ScriptSlider" id="posmod5" value="0.0"/>
-            <Control type="ScriptSlider" id="pos4" value="1.0"/>
+            <Control type="ScriptSlider" id="pos4" value="0.4399999976158142"/>
             <Control type="ScriptSlider" id="pos5" value="0.0"/>
             <Control type="ScriptSlider" id="posmod6" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel10" value="1.0"/>
@@ -300,8 +300,8 @@
             <Control type="ScriptSliderPack" id="SliderPack2" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack3" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack4" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform" value="0.0" data="{PROJECT_FOLDER}RNGGIT-85.2-02.1.wav"
-                     rangeStart="0" rangeEnd="135529"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptComboBox" id="OutputSelector" value="1.0"/>
             <Control type="ScriptSlider" id="pitchdiv2" value="1.0"/>
             <Control type="ScriptButton" id="psync2" value="0.0"/>
@@ -318,7 +318,7 @@
             <Control type="ScriptComboBox" id="pos1modsel12" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel13" value="1.0"/>
             <Control type="ScriptSlider" id="posmod9" value="0.0"/>
-            <Control type="ScriptSlider" id="pos11" value="1.0"/>
+            <Control type="ScriptSlider" id="pos11" value="0.3499999940395355"/>
             <Control type="ScriptSlider" id="pos12" value="0.0"/>
             <Control type="ScriptSlider" id="posmod10" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel14" value="1.0"/>
@@ -355,8 +355,8 @@
             <Control type="ScriptSliderPack" id="SliderPack6" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack7" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack8" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0.0" data="{PROJECT_FOLDER}RNGGIT-85.2-02.1.wav"
-                     rangeStart="0" rangeEnd="135529"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform1" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptComboBox" id="OutputSelector1" value="1.0"/>
             <Control type="ScriptSlider" id="pitchdiv3" value="8.0"/>
             <Control type="ScriptButton" id="psync3" value="0.0"/>
@@ -373,7 +373,7 @@
             <Control type="ScriptComboBox" id="pos1modsel69" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel70" value="1.0"/>
             <Control type="ScriptSlider" id="posmod40" value="0.0"/>
-            <Control type="ScriptSlider" id="pos97" value="1.0"/>
+            <Control type="ScriptSlider" id="pos97" value="0.0"/>
             <Control type="ScriptSlider" id="pos98" value="0.0"/>
             <Control type="ScriptSlider" id="posmod41" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel71" value="1.0"/>
@@ -410,8 +410,8 @@
             <Control type="ScriptSliderPack" id="SliderPack10" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack11" value="3.0" data="16....f+....9C...3O......"/>
             <Control type="ScriptSliderPack" id="SliderPack12" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform2" value="0.0" data="{PROJECT_FOLDER}RNGGIT-85.2-02.1.wav"
-                     rangeStart="0" rangeEnd="135529"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform2" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptComboBox" id="OutputSelector2" value="1.0"/>
             <Control type="ScriptSlider" id="pitchdiv4" value="2.0"/>
             <Control type="ScriptButton" id="psync4" value="0.0"/>
@@ -428,8 +428,8 @@
             <Control type="ScriptComboBox" id="pos1modsel94" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel95" value="1.0"/>
             <Control type="ScriptSlider" id="posmod54" value="0.0"/>
-            <Control type="ScriptSlider" id="pos137" value="1.0"/>
-            <Control type="ScriptSlider" id="pos138" value="0.01999999955296516"/>
+            <Control type="ScriptSlider" id="pos137" value="0.1800000071525574"/>
+            <Control type="ScriptSlider" id="pos138" value="0.0"/>
             <Control type="ScriptSlider" id="posmod55" value="0.0"/>
             <Control type="ScriptComboBox" id="pos1modsel96" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel97" value="1.0"/>
@@ -465,8 +465,8 @@
             <Control type="ScriptSliderPack" id="SliderPack14" value="2.0" data="16....f+....9C........f+."/>
             <Control type="ScriptSliderPack" id="SliderPack15" value="2.0" data="16....f+....9C..........."/>
             <Control type="ScriptSliderPack" id="SliderPack16" value="1.0" data="16....f+.........3O...f+."/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data="{PROJECT_FOLDER}RNGGIT-85.2-02.1.wav"
-                     rangeStart="0" rangeEnd="135529"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptComboBox" id="OutputSelector3" value="1.0"/>
             <Control type="ScriptComboBox" id="pos1modsel52" value="0.0"/>
             <Control type="ScriptSlider" id="pos24" value="0.5"/>

@@ -4782,6 +4782,6 @@
              bgColour="13631488" textColour="3907643801" itemColour="4281545523"
              width="60.0" height="30.0" max="72"/>
   <Component type="ScriptLabel" id="Label22" x="-15.0" y="1.0" width="60.0"
-             height="10.0" fontName="Montserrat" textColour="3899748721" text="v2.6b"
+             height="10.0" fontName="Montserrat" textColour="3899748721" text="v2.6.2b"
              editable="0" alignment="right" fontSize="14.0"/>
 </ContentProperties>
